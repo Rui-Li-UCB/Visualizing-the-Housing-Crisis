@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Visualizing the Housing Crisis</title>
+
+    <!-- fonts style -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre Baskerville"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="../staticFiles/css/style.css" rel="stylesheet" />
+
+    <!-- google icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+
+  <body>
+    <nav id="navbar" class="nav-bar">
+      <ul>
+        <li id="menu">
+          <span id="menu_bttn" class="material-symbols-outlined">menu</span>
+        </li>
+        <li id="logo">
+          <img src="../staticFiles/images/logo.png" alt="viz logo" />
+        </li>
+        <li id="item3">item3</li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div id="introduction" class="content">
+        <h1>Visualizing the Housing Crisis</h1>
+        <p class="emphasis_p">Everyone deserves housing.</p>
+
+        <div id="cover" class="theme_img">
+          <img id="hand" src="../staticFiles/images/house_hand/hand.png" />
+          <img id="house" src="../staticFiles/images/house_hand/house.png" />
+          <img id="bg" src="../staticFiles/images/house_hand/bg.png" />
+        </div>
+        <p class="footnote">footnote</p>
+        <div class="main_p">
+          <p>
+            And yet redlining, zoning policy, evictions, displacement, rising
+            rents, and lack of affordable housing all contribute to what is
+            commonly known as the "Housing Crisis."
+          </p>
+          <p>
+            Whether you've heard of this term or not, you might be aware of some
+            of these elements that make this such a complex systems problem.
+            There is a history of segregation-based practices and policy, the
+            legacy of which contributes to the continuation of racial inequity
+            in housing. Understanding the past will help us contextualize the
+            present and work towards a better future.
+          </p>
+          <p>
+            Community engagement is crucial to creating solutions in equitable
+            housing— by learning more about this crisis, we hope to encourage
+            more nuanced discussions. This is the first step in making this
+            happen, so let's get started.
+          </p>
+        </div>
+      </div>
+      <div id="richmond" class="content">
+        <p class="emphasis_p">
+          To tell this story, let's take a look at Richmond, California
+        </p>
+        <p class="main_p">
+          Zooming in on Richmond, California, we'll help you untangle the
+          complexities of the Housing Crisis by breaking down the data and
+          telling you a story. Richmond presents a compelling case study to
+          understand the housing crisis. Richmond is a city in the East San
+          Francisco Bay Area. It has been racially and economically diverse
+          since it's founding, but like many cities it has fault lines. There's
+          a history of housing inequity dating back to pre-WWII and a large
+          corporate industry presence, both of which have contributed to early
+          stages of gentrification and displacement of the city's Black
+          population.
+        </p>
+        <p class="main_p">
+          Let's break down this problem by looking at the current housing in
+          Richmond.
+        </p>
+      </div>
+      <div id="currentproblem" class="content">
+        <h2>How does housing inequity impact people differently?</h2>
+        <p class="emphasis_p">
+          First, let's see how housing in Richmond looks now.
+        </p>
+        <br />
+        <div id="map_container">
+          <iframe
+            id="zoning_map"
+            src="../staticFiles/images/zoning/Zoning-Map-Richmond.PDF#view=FitH&toolbar=0&statusbar=0&messages=0&navpanes=0"
+            frameborder="0"
+          ></iframe>
+        </div>
+        <p class="footnote">footnote</p>
+
+        <h3>Disparate Impacts, typically falling on racial lines</h3>
+        <p class="main_p">
+          This is the City of Richmond's zoning map for [YEAR]. Zoning laws
+          define how land is broken up for various purposes, such as commercial
+          use, residential use, or mixed (commercial and residential) use. For
+          housing, they can also specify what kinds of homes can be built and
+          where - for example, multi-family apartment complexes versus
+          single-family homes.
+        </p>
+        <br />
+        <p class="emphasis_p">Let's see how zoning relates to race.</p>
+        <p>
+          [INSERT 2010 OR 2020 MAP OF RACIAL GROUPS BY TRACT OVERLAYED ON ZONING
+          MAP]
+        </p>
+        <img src="../staticFiles/images/zoning/demo.png" />
+
+        <p>
+          [EXPLAIN CORRELATION BETWEEN RACE AND ZONE - NEED DATA CHECK HERE
+          Single-Family Zoning is correlated with race: higher SFZ %s are seen
+          in cities that have high White populations - we can show racial groups
+          in context, as OBI does, or highlight values across the two groups (as
+          in our design)]
+        </p>
+        <p>
+          <span style="font-weight: bold"
+            >Much of this racial disparity is due to the historical legacy of
+            redlining in the Bay Area.</span
+          >
+          Redlining refers to the discriminatory practice by banks and
+          government agencies in denying or withholding home loans in “red”
+          (“hazardous” ) neighborhoods. This process often excluded racial
+          minorities, especially Black residents, from living in neighborhoods.
+        </p>
+        <p>[INSERT REDLINING MAP IF WE CAN FIND ONE?]</p>
+        <p>Zones, therefore, are often correlated with redlined neighborhoods. Studies from the Othering and Belonging Institute show that single-family zoning is strongly correlated with neighborhood characteristics that have a direct impact on residents. Residents in single-family zones are correlated to have access to better schools, higher incomes, lower property, and higher property values. These factors have a compounding effect that can affect opportunities for attaining better outcomes throughout their lives.
+        </p>
+        <p>[INSERT POVERTY BY TRACT MAP, ZONING DISPARITIES: see below for analysis]
+        </p>
+      </div>
+      <div id = 'racecompare' class = 'content'>
+        <p>[PLACE HOLDER FOR SFZ vs. MF/MIX/COMMERCIALZ] </p>
+        <p>Social economic outcome differences between the two groups:
+          Cities in SF Bay area with high-SFZ feature better reading and math proficiency, lower prevalence of free/reduced school lunch, better high school and college graduation rates (current analysis is for cities, we will change it to tracts inside Richmond)
+          Higher SFZ is correlated with better environmental conditions, e.g., Diesel Emissions, Drinking Water Pollution, Pesticides, PM2.5 exposure, Toxis Releases, Traffic Pollution
+        </p>
+        <p>[PLACE HOLDER FOR BUTTON - EVICTION DATA VIZ ]</p>
+      </div>
+      <div id="timeline" class="content"></div>
+      <div id="currenthousing" class="content"></div>
+      <div id="solutions" class="content"></div>
+      <div id="nextsteps" class="content">
+        <h2>This is just the beginning</h2>
+        <p>This is a big problem space with no one “one size fits all” solution. When you think of all the work that needs to be done to help fix this problem, it might seem like a maze trying to find where to begin. 
+        </p>
+        <p>Well, you just took the first step, empowering action by understanding the history that led to the housing crisis, how it manifests today, and what solutions might look like.
+        </p>
+        <p>Creating informed citizens will lead to informed action, action that can make a difference.</p>
+      </div>
+      <div id="summary" class="conclusion"></div>
+    </div>
+    <script src="../staticFiles/js/script.js"></script>
+  </body>
+</html>
