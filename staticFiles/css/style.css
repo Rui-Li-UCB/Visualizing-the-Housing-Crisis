@@ -132,3 +132,34 @@ p {
     width:100%;
     border:0;
 }
+
+/* conclusion */
+#full_house{
+    height:100%;
+}
+.popup {
+    display:flex;
+    padding: 20px;
+    background-color: var(--gray-dark);
+    color: var(--white);
+    font-weight: 100;
+    font-size: 14px;
+    position: relative;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .popup:target {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .popup > .close {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background-color: var(--dark);
+    color:var(--gray);
+    padding: 4px 10px;
+  }
