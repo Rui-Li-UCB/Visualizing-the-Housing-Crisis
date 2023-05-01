@@ -111,8 +111,8 @@ p {
   margin-top: 80px;
   text-align: left;
   padding: 5dvh;
-  height: 100vh;
-  column-gap:2vh;
+  height: 100%;
+  column-gap:15vh;
 }
 .content {
   grid-column: 1/2;
@@ -204,20 +204,26 @@ p {
   align-content: center;
 }
 
+/* How did we get here - Zoning */
+#map_container {
+  height: 100%;
+  width:100%;
+}
+#zoning_map {
+  height: 68vh;
+  width: 100%;
+  border: 0;
+} 
 
 
+/* evictions */
+#blank{
+  height:40vh;
+  width:100%;
+}
 /* currentproblem */
 /* #currentproblem {
   height: 100%;
-}
-/* #map_container {
-  height: 70vh;
-  width: 100%;
-} */
-#zoning_map {
-  height: 100%;
-  width: 100%;
-  border: 0;
 } */
 
 /* conclusion */
@@ -253,6 +259,11 @@ p {
 
 
 /* footnote */
+
+body {
+    counter-reset: footnotes;
+  }
+
 a[aria-describedby="footnote-label"] {
   counter-increment: footnotes; /* 1 */
   text-decoration: none; /* 2 */
