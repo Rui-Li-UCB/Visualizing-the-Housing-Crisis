@@ -2,6 +2,10 @@ html * {
   font-family: "Lato";
 }
 
+body{
+  margin:0;
+}
+
 :root {
   --blue: #627c8d;
   --skyblue: #b7e1f2;
@@ -45,7 +49,7 @@ p {
   text-align: left;
   padding: 2% 0;
 }
-.footnote {
+.credit {
   font-family: "Libre Baskerville", Times, serif;
   font-style: italic;
   text-align: right;
@@ -100,22 +104,45 @@ p {
   grid-column: 3/4;
 }
 
-/* Container - Content CSS */
+/* Container and overall - Content CSS */
 .container {
   display: grid;
   grid-template-columns: 2fr 2fr;
   margin-top: 80px;
   text-align: left;
   padding: 5dvh;
-  height: 80vh;
+  height: 100vh;
+  column-gap:2vh;
 }
 .content {
   grid-column: 1/2;
   height: 100%;
+  position:relative;
+  top:10vh;
 }
 
+.center_container{
+  text-align: center;
+  padding: 5dvh;
+  height: 60vh;
+  margin-top: 80px;
+  display:flex;
+  justify-content: center;
+}
+
+.center_container p{
+  text-align:center;
+}
+
+.main_p {
+  text-align: left;
+  /* width:50%; */
+}
+
+/* intro */
+
 #introduction {
-  height: 80vh;
+  height: 75vh;
 }
 
 #cover {
@@ -124,16 +151,18 @@ p {
   /* width:50%; */
   /* text-align:right; */
   /* display:flex; */
+  top:10vh;
   justify-content: right;
 }
-#image_box {
+.image_box {
+  grid-column:2/4;
   height: 75vh;
   /* reminder to change size based on viewport width */
 }
 .theme_img img {
   position: absolute;
-  height: 70vh;
-  right: 2vh;
+  height: 65vh;
+  left: 5vw;
 }
 #hand {
   z-index: 3;
@@ -147,24 +176,49 @@ p {
   z-index: 1;
 }
 
-.main_p {
-  text-align: left;
-  /* width:50%; */
+
+
+/* welcome to richmond */
+#richmond_container{
+  background-color:var(--gray);
+  height:80vh;
+}
+#richmond{
+  position:relative;
+  top:15vh;
 }
 
+#richmond_image{
+  position:relative;
+  left:5vw;
+  top:10vh;
+}
+
+/* richmond disparity living */
+#notthesame{
+  position:relative;
+  top:15vh;
+}
+#rch_disp{
+  width:55vw;
+  align-content: center;
+}
+
+
+
 /* currentproblem */
-#currentproblem {
+/* #currentproblem {
   height: 100%;
 }
-#map_container {
+/* #map_container {
   height: 70vh;
   width: 100%;
-}
+} */
 #zoning_map {
   height: 100%;
   width: 100%;
   border: 0;
-}
+} */
 
 /* conclusion */
 #full_house {
@@ -195,4 +249,28 @@ p {
   background-color: var(--dark);
   color: var(--gray);
   padding: 4px 10px;
+}
+
+
+/* footnote */
+a[aria-describedby="footnote-label"] {
+  counter-increment: footnotes; /* 1 */
+  text-decoration: none; /* 2 */
+  color: inherit; /* 2 */
+  cursor: default; /* 2 */
+  outline: none; /* 2 */
+  font-style:italic;
+}
+a[aria-describedby="footnote-label"]::after {
+  content: '[' counter(footnotes) ']'; /* 1 */
+  vertical-align: super; /* 2 */
+  font-size: 0.5em; /* 3 */
+  margin-left: 2px; /* 4 */
+  color: var(--blue); /* 5 */
+  text-decoration: underline; /* 5 */
+  cursor: pointer; /* 5 */
+}
+a[aria-describedby="footnote-label"]:focus::after {
+  outline: thin dotted;
+  outline-offset: 2px;
 }
