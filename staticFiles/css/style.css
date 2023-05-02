@@ -2,8 +2,8 @@ html * {
   font-family: "Lato";
 }
 
-body{
-  margin:0;
+body {
+  margin: 0;
 }
 
 :root {
@@ -112,31 +112,62 @@ p {
   text-align: left;
   padding: 5dvh;
   height: 100%;
-  column-gap:15vh;
+  column-gap: 15vh;
 }
+
+.wide_container{
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+  display: grid;
+  margin-top: 80px;
+  text-align: left;
+  padding: 5dvh;
+  height: 100%;
+}
+
 .content {
   grid-column: 1/2;
   height: 100%;
-  position:relative;
-  top:10vh;
+  position: relative;
+  top: 10vh;
 }
 
-.center_container{
+.wide_content{
+  grid-column:1/4;
+  height: 100%;
+  position: relative;
+}
+
+.center_container {
   text-align: center;
   padding: 5dvh;
   height: 60vh;
   margin-top: 80px;
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
-.center_container p{
-  text-align:center;
+.center_container p {
+  text-align: center;
 }
 
+.center_p {
+  width: 55vw;
+  align-content: center;
+}
 .main_p {
   text-align: left;
   /* width:50%; */
+}
+
+.image_box {
+  grid-column: 2/4;
+  height: 75vh;
+  /* reminder to change size based on viewport width */
+}
+
+.sm_image_box{
+  grid-column:4/6;
+  height:75vh;
 }
 
 /* intro */
@@ -151,14 +182,10 @@ p {
   /* width:50%; */
   /* text-align:right; */
   /* display:flex; */
-  top:10vh;
+  top: 10vh;
   justify-content: right;
 }
-.image_box {
-  grid-column:2/4;
-  height: 75vh;
-  /* reminder to change size based on viewport width */
-}
+
 .theme_img img {
   position: absolute;
   height: 65vh;
@@ -176,55 +203,52 @@ p {
   z-index: 1;
 }
 
-
-
 /* welcome to richmond */
-#richmond_container{
-  background-color:var(--gray);
-  height:80vh;
+#richmond_container {
+  background-color: var(--gray);
+  height: 80vh;
 }
-#richmond{
-  position:relative;
-  top:15vh;
+#richmond {
+  position: relative;
+  top: 15vh;
 }
 
-#richmond_image{
-  position:relative;
-  left:5vw;
-  top:10vh;
+#richmond_image {
+  position: relative;
+  left: 5vw;
+  top: 10vh;
 }
 
 /* richmond disparity living */
-#notthesame{
-  position:relative;
-  top:15vh;
-}
-#rch_disp{
-  width:55vw;
-  align-content: center;
+#notthesame {
+  position: relative;
+  top: 15vh;
 }
 
 /* How did we get here - Zoning */
 #map_container {
   height: 100%;
-  width:100%;
+  width: 100%;
 }
 #zoning_map {
   height: 68vh;
   width: 100%;
   border: 0;
-} 
-
-
-/* evictions */
-#blank{
-  height:40vh;
-  width:100%;
 }
-/* currentproblem */
-/* #currentproblem {
-  height: 100%;
-} */
+
+/* Different Realities: Median Household Income */
+#diff_real{
+  top:0;
+}
+
+
+/* Why are there still issues in housing? */
+#dev_cost{
+  width:70%;
+  position:relative;
+  left:8vw;
+  top:-8vh;
+}
 
 /* conclusion */
 #full_house {
@@ -257,12 +281,11 @@ p {
   padding: 4px 10px;
 }
 
-
 /* footnote */
 
 body {
-    counter-reset: footnotes;
-  }
+  counter-reset: footnotes;
+}
 
 a[aria-describedby="footnote-label"] {
   counter-increment: footnotes; /* 1 */
@@ -270,10 +293,10 @@ a[aria-describedby="footnote-label"] {
   color: inherit; /* 2 */
   cursor: default; /* 2 */
   outline: none; /* 2 */
-  font-style:italic;
+  font-style: italic;
 }
 a[aria-describedby="footnote-label"]::after {
-  content: '[' counter(footnotes) ']'; /* 1 */
+  content: "[" counter(footnotes) "]"; /* 1 */
   vertical-align: super; /* 2 */
   font-size: 0.5em; /* 3 */
   margin-left: 2px; /* 4 */

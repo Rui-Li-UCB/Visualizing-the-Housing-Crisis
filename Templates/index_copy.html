@@ -86,6 +86,7 @@
       <br />
     </div>
 
+    <!-- Welcome to Richmond,CA -->
     <div class="container" id="richmond_container">
       <div id="richmond" class="content">
         <br />
@@ -125,13 +126,14 @@
       </div>
     </div>
 
+    <!-- Living in Richmond is not the same for everyone -->
     <div class="center_container">
       <div id="notthesame">
         <div>
           <br />
           <br />
           <h2>Living in Richmond is Not the Same for Everyone</h2>
-          <div id="rch_disp">
+          <div class="center_p">
             <p>
               Today in Richmond, life looks different based simply on where
               people live. By examining disparities between White and Black
@@ -149,7 +151,7 @@
       </div>
     </div>
 
-    <!-- How did we get here -->
+    <!-- How did we get here - Zoning -->
     <div class="container">
       <div id="How_Get_Here" class="content">
         <div class="main_p">
@@ -270,53 +272,24 @@
           </p>
         </div>
       </div>
-    </div>
-    <!-- Following is from narrative doc -->
-    <div class="container">
-      <div id="currentproblem" class="content">
-        <h2>Housing Today: Racial Disparities in Richmond</h2>
-        <div class="main_p">
-          <p class="emphasis_p">The White vs Black Experience in Richmond</p>
-          <p>
-            Residents of single-family zones have access to better schools,
-            cleaner water, lower exposure to pollutants, higher incomes, lower
-            property, and higher property values. In fact, they state,<a
-              aria-describedby="footnote-label"
-              href="#footnotes"
-              id="footnotes-ref"
-            >
-              “...cities with high levels of single-family zoning have greater
-              resources in virtually every statistic we are able to measure.
-              ”</a
-            >
-          </p>
-          <p>
-            The following data visualizations stress the dramatic impact of
-            restrictive zoning for Richmond’s white and black populations, and
-            make the case for reversing this impact.
-          </p>
-          <p>
-            These factors affect
-            <a
-              aria-describedby="footnote-label"
-              href="#everything"
-              id="everything-ref"
-              >everything</a
-            >
-            including opportunities for attaining better outcomes throughout
-            their lives.
-          </p>
-        </div>
-      </div>
+
       <div class="image_box">
-        <p>[VIZ PLACEHOLDER]</p>
+        <div>
+          <img
+            id="redline-map"
+            style="max-width: 45vw"
+            src="..\staticFiles\images\redlining\holc-scan_Oakland_small.jpg"
+          />
+        </div>
       </div>
     </div>
 
+    <!-- How did we get here - evictions -->
     <div class="container">
-      <div id="evictions-cont" class="content">
-        <h2>Evictions</h2>
+      <div id="how_did_we_eviction" class="content">
         <div class="main_p">
+          <h2>How Did We Get Here?</h2>
+          <h3>Evictions</h3>
           <p>
             When someone is legally evicted, they are ordered by the court to
             leave their residence. Using data from the Eviction Research Network
@@ -324,172 +297,305 @@
             their home by the county sheriff after losing their eviction case)
             served from January 2017 to March 2022, we find that there are
             racial disparities in evictions in Richmond. As with zoning, who is
-            evicted is related to one’s socioeconomic and geographic reality.
+            evicted is related to one's socioeconomic and geographic reality.
           </p>
+
+          <p>
+            Using data from the Eviction Research Network on writs of
+            restitution (when a tenant is officially removed from their home by
+            the county sheriff after losing their eviction case) served from
+            January 2017 to March 2022, we find that there are still racial
+            disparities in evictions in Richmond. As with zoning, who is evicted
+            is related to one's socioeconomic and geographic reality.
+          </p>
+        </div>
+      </div>
+
+      <div class="image_box">
+        <div
+          class="tableauPlaceholder"
+          id="viz1682981065116"
+          style="position: relative"
+        >
+          <noscript
+            ><a href="#"
+              ><img
+                alt="Majority Race by Tract (2021) versus Evictions  (Jan 2017- Mar 2022) "
+                src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ev&#47;Eviction_Map_Update&#47;Sheet1&#47;1_rss.png"
+                style="border: none" /></a></noscript
+          ><object class="tableauViz" style="display: none">
+            <param
+              name="host_url"
+              value="https%3A%2F%2Fpublic.tableau.com%2F"
+            />
+            <param name="embed_code_version" value="3" />
+            <param name="site_root" value="" />
+            <param name="name" value="Eviction_Map_Update&#47;Sheet1" />
+            <param name="tabs" value="no" />
+            <param name="toolbar" value="yes" />
+            <param
+              name="static_image"
+              value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ev&#47;Eviction_Map_Update&#47;Sheet1&#47;1.png"
+            />
+            <param name="animate_transition" value="yes" />
+            <param name="display_static_image" value="yes" />
+            <param name="display_spinner" value="yes" />
+            <param name="display_overlay" value="yes" />
+            <param name="display_count" value="yes" />
+            <param name="language" value="en-US" />
+            <param name="filter" value="publish=yes" />
+          </object>
+        </div>
+        <script type="text/javascript">
+          var divElement = document.getElementById("viz1682981065116");
+          var vizElement = divElement.getElementsByTagName("object")[0];
+          vizElement.style.width = "100%";
+          vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
+          var scriptElement = document.createElement("script");
+          scriptElement.src =
+            "https://public.tableau.com/javascripts/api/viz_v1.js";
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </div>
+    </div>
+
+    <!-- Writs of Restitution by Ethnicity -->
+    <div class="container">
+      <div id="writs" class="content">
+        <div class="main_p">
           <p>
             As seen in this map, the neighborhoods with the highest levels of
-            measured evictions are the Iron Triangle, Panhandle, and Hilltop.
-            These neighborhoods are predominantly Black and Hispanic. The
-            current housing landscape places the vulnerable - who are often
-            racial minorities - in precarious situations rather than support
-            them.
-          </p>
-          <br />
-          <script
-            type="module"
-            src="https://us-west-2b.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"
-          ></script>
-          <tableau-viz
-            id="tableau-viz"
-            src="https://us-west-2b.online.tableau.com/t/housingviz/views/Evictions_bar_chart/Sheet1"
-            width="100%"
-            height="30vh"
-            hide-tabs
-            toolbar="bottom"
-          ></tableau-viz>
-
-          <br />
-          <p>
-            Can public policy reduce this racial disparity? Past research shows
-            that eviction is linked with worse physical and mental health, more
-            emergency room visits, lower educational outcomes for children, food
-            insecurity, and higher rates of future homelessness. All of these
-            factors are tied with financial instability, which experiencing an
-            eviction exacerbates. This is why federal, state, and local
-            governments instituted moratoria on eviction in the early days of
-            the COVID-19 pandemic.
-          </p>
-
-          <div id="monthly_evictions_overtime">
-            <div
-              class="tableauPlaceholder"
-              id="viz1682968362940"
-              style="position: relative"
-            >
-              <noscript
-                ><a href="#"
-                  ><img
-                    alt="Monthly Evictions in Richmond, CA area over time "
-                    src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ev&#47;evictionovertime&#47;Sheet1&#47;1_rss.png"
-                    style="border: none" /></a></noscript
-              ><object class="tableauViz" style="display: none">
-                <param
-                  name="host_url"
-                  value="https%3A%2F%2Fpublic.tableau.com%2F"
-                />
-                <param name="embed_code_version" value="3" />
-                <param name="site_root" value="" />
-                <param name="name" value="evictionovertime&#47;Sheet1" />
-                <param name="tabs" value="no" />
-                <param name="toolbar" value="yes" />
-                <param
-                  name="static_image"
-                  value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ev&#47;evictionovertime&#47;Sheet1&#47;1.png"
-                />
-                <param name="animate_transition" value="yes" />
-                <param name="display_static_image" value="yes" />
-                <param name="display_spinner" value="yes" />
-                <param name="display_overlay" value="yes" />
-                <param name="display_count" value="yes" />
-                <param name="language" value="en-US" />
-                <param name="filter" value="publish=yes" />
-              </object>
-            </div>
-            <script type="text/javascript">
-              var divElement = document.getElementById("viz1682968362940");
-              var vizElement = divElement.getElementsByTagName("object")[0];
-              vizElement.style.width = "100%";
-              vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
-              var scriptElement = document.createElement("script");
-              scriptElement.src =
-                "https://public.tableau.com/javascripts/api/viz_v1.js";
-              vizElement.parentNode.insertBefore(scriptElement, vizElement);
-            </script>
-          </div>
-          <div id="blank"></div>
-          <p>
-            This graph shows that, while public policy is effective in reducing
-            evictions, it did not fully address the racial disparities that
-            exist in Richmond. In 2017, there were 3.5 Black evictions and 2.5
-            Hispanic evictions for every 1 White eviction. In 2021, that value
-            changed to 4 Latine evictions for every 1 White eviction, while
-            Black eviction rates stayed the same.
+            measured evictions are Black and Hispanic. The current housing
+            landscape places the vulnerable - who are often racial minorities -
+            in precarious situations rather than support them.
           </p>
         </div>
       </div>
       <div class="image_box">
-        <div id="eviction_map">
-          <script
-            type="module"
-            src="https://us-west-2b.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"
-          ></script>
-          <tableau-viz
-            id="tableau-viz"
-            src="https://us-west-2b.online.tableau.com/t/housingviz/views/Eviction_Map_Update/Sheet1/9005a506-0500-41d1-b0b5-e8161249f5f6/35a28630-ac55-4524-a97d-b8f49da10c91"
-            width="1263"
-            height="800"
-            hide-tabs
-            toolbar="bottom"
-          ></tableau-viz>
+        <div
+          class="tableauPlaceholder"
+          id="viz1682982824937"
+          style="position: relative"
+        >
+          <noscript
+            ><a href="#"
+              ><img
+                alt="Evictions in Richmond by Race, 2017-2022 "
+                src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ev&#47;Evictions_bar_chart&#47;Sheet1&#47;1_rss.png"
+                style="border: none" /></a></noscript
+          ><object class="tableauViz" style="display: none">
+            <param
+              name="host_url"
+              value="https%3A%2F%2Fpublic.tableau.com%2F"
+            />
+            <param name="embed_code_version" value="3" />
+            <param name="site_root" value="" />
+            <param name="name" value="Evictions_bar_chart&#47;Sheet1" />
+            <param name="tabs" value="no" />
+            <param name="toolbar" value="yes" />
+            <param
+              name="static_image"
+              value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ev&#47;Evictions_bar_chart&#47;Sheet1&#47;1.png"
+            />
+            <param name="animate_transition" value="yes" />
+            <param name="display_static_image" value="yes" />
+            <param name="display_spinner" value="yes" />
+            <param name="display_overlay" value="yes" />
+            <param name="display_count" value="yes" />
+            <param name="language" value="en-US" />
+            <param name="filter" value="publish=yes" />
+          </object>
         </div>
-        <div id="blank"></div>
+        <script type="text/javascript">
+          var divElement = document.getElementById("viz1682982824937");
+          var vizElement = divElement.getElementsByTagName("object")[0];
+          vizElement.style.width = "100%";
+          vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
+          var scriptElement = document.createElement("script");
+          scriptElement.src =
+            "https://public.tableau.com/javascripts/api/viz_v1.js";
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </div>
+    </div>
+
+    <!-- Housing Today: Racial Disparities in Richmond -->
+    <div class="center_container">
+      <div id="currentproblem" class="center_p">
+        <h2>Housing Today: Racial Disparities in Richmond</h2>
+        <p class="emphasis_p">The White vs Black Experience in Richmond</p>
         <p>
-          As seen on the left, public policy and eviction moratoria were
-          effective in reducing evictions and keeping tenants in place during
-          the COVID-19 pandemic, as monthly lockouts went from 22.1 per month to
-          7.1 per month on average. Breaking the above graph down by race, we
-          see the following:
+          Residents of single-family zones have access to better schools,
+          cleaner water, lower exposure to pollutants, higher incomes, lower
+          property, and higher property values.
         </p>
-        <div id="blank"></div>
-        <div id="yearly_evictions_overtime">
-          <div
-            class="tableauPlaceholder"
-            id="viz1682968869437"
-            style="position: relative"
+        <p>
+          In fact, they state,<a
+            aria-describedby="footnote-label"
+            href="#footnotes"
+            id="footnotes-ref"
           >
-            <noscript
-              ><a href="#"
-                ><img
-                  alt="Yearly evictions in Richmond, CA area over time by race "
-                  src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ev&#47;evictionovertime&#47;Sheet2&#47;1_rss.png"
-                  style="border: none" /></a></noscript
-            ><object class="tableauViz" style="display: none">
-              <param
-                name="host_url"
-                value="https%3A%2F%2Fpublic.tableau.com%2F"
-              />
-              <param name="embed_code_version" value="3" />
-              <param name="site_root" value="" />
-              <param name="name" value="evictionovertime&#47;Sheet2" />
-              <param name="tabs" value="no" />
-              <param name="toolbar" value="yes" />
-              <param
-                name="static_image"
-                value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ev&#47;evictionovertime&#47;Sheet2&#47;1.png"
-              />
-              <param name="animate_transition" value="yes" />
-              <param name="display_static_image" value="yes" />
-              <param name="display_spinner" value="yes" />
-              <param name="display_overlay" value="yes" />
-              <param name="display_count" value="yes" />
-              <param name="language" value="en-US" />
-              <param name="filter" value="publish=yes" />
-            </object>
-          </div>
-          <script type="text/javascript">
-            var divElement = document.getElementById("viz1682968869437");
-            var vizElement = divElement.getElementsByTagName("object")[0];
-            vizElement.style.width = "100%";
-            vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
-            var scriptElement = document.createElement("script");
-            scriptElement.src =
-              "https://public.tableau.com/javascripts/api/viz_v1.js";
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);
-          </script>
+            “...cities with high levels of single-family zoning have greater
+            resources in virtually every statistic we are able to measure. ”</a
+          >
+        </p>
+        <p>
+          The following data visualizations stress the dramatic impact of
+          restrictive zoning for Richmond's white and black populations, and
+          make the case for reversing this impact.
+        </p>
+      </div>
+    </div>
+
+    <!-- Different Realities: Median Household Income -->
+    <div class="container">
+      <h2>Different Realities: Median Household Income</h2>
+      <div id="diff_real" class="content">
+        <p>White Residents</p>
+        <p>[VIZ PLACEHOLDER]</p>
+      </div>
+      <div class="image_box">
+        <p>Black Residents</p>
+        <p>[VIZ PLACEHOLDER]</p>
+      </div>
+    </div>
+
+    <!-- These factors affect everything -->
+    <div class="center_container">
+      <p style="font-weight: bold">
+        These factors affect
+        <a
+          aria-describedby="footnote-label"
+          href="#everything"
+          id="everything-ref"
+          >everything</a
+        >
+        including opportunities for attaining better outcomes throughout their
+        lives.
+      </p>
+    </div>
+
+    <!-- Housing Today: Racial Disparities in Richmond - Evictions -->
+    <div class="wide_container">
+      <div class="wide_content">
+        <div class="main_p">
+          <h2>Housing Today: Racial Disparities in Richmond</h2>
+          <h3>Evictions</h3>
+          <p>
+            Being evicted from one's home has significant negative public health
+            impacts.
+          </p>
+          <p>
+            Past research shows that eviction is linked with worse physical and
+            mental health, more emergency room visits, lower educational
+            outcomes for children, food insecurity, and higher rates of future
+            homelessness.
+          </p>
+          <p>
+            All of these factors are tied with financial instability, which
+            experiencing an eviction exacerbates. This is why federal, state,
+            and local governments instituted moratoria on eviction in the early
+            days of the COVID-19 pandemic.
+          </p>
         </div>
       </div>
     </div>
 
+    <div class="container">
+      <div class="content">
+        <p>[CONTENT] 2 screens of content and graph from figma on evictions</p>
+      </div>
+    </div>
+
+    <!-- Why are there still issues in housing? -->
+    <div class="wide_container">
+      <div class="wide_content">
+        <div class="main_p">
+          <h2>
+            Why are there still issues in housing? Problems surrounding
+            development today
+          </h2>
+          <h3>
+            Developing housing is prohibitively costly and time consuming.
+          </h3>
+          <p>
+            Multifamily developments must adhere to a variety of regulations in
+            order to protect the health and safety of residents, and ensure the
+            integrity of the building and surrounding area. While certain
+            regulations are very important, it is important to consider that
+            each regulation comes at an expense to the project and developer,
+            who then in turn increase rents in order to maintain financial
+            feasibility. At present, regulation compliance constitutes an
+            average of 40% of a project's total development costs, a high
+            percentage considering the cost of land, labor, and materials.
+            Conflicting standards across regulations and time consuming review
+            processes are costly both in terms of time and money. This in turn
+            can limit who can afford to develop housing. Increasingly,
+            development is being conducted by large corporations who have
+            greater access to funding to be able to afford the cost of holding
+            onto land through delays, rather than by smaller scale developers
+            who may want to invest in the community.
+          </p>
+
+          <p>
+            Regulatory mandates have been seen as one potential solution to the
+            creation of affordable housing. However, adhering to these
+            regulations are also costly and may increase the total development
+            costs by 30%, which can discourage housing development in the places
+            that need it most.
+          </p>
+
+          <p>
+            Recently, the National Association of Home Builders (NAHB) and the
+            National Multifamily Housing Council (NMHC) undertook a joint
+            research effort to find out how much government regulation affects
+            multifamily housing via a survey distributed to multifamily
+            developers. It found that 87.5% of multifamily developers said they
+            avoid building in jurisdictions with rent control in place.
+          </p>
+
+          <p>
+            Another obstacle to housing development is community engagement,
+            which occurs during multiple stages of the review processes. While
+            it is important for the community to contribute to the development
+            of their surroundings, research has shown that “Not in My Backyard”
+            (NIMBY) oppositions adds an average of 5.6% to total development
+            costs, and can delay project development by an average of 7.4
+            months. Additionally, public facing projects tend to receive a lot
+            of expectations to fulfill extraordinary “catch-all” solutions to a
+            community's multi-faceted efforts.
+          </p>
+        </div>
+      </div>
+      <div class="sm_image_box">
+        <img src="../staticFiles\images\dev_cost\dev_cost.svg" id="dev_cost" />
+      </div>
+    </div>
+
+    <!-- What's the fix? -->
+    <div class="wide_container">
+      <div class="wide_content">
+        <h2>What's the Fix?</h2>
+        <p>
+          There are no quick fixes to the housing crisis affecting residents in
+          Richmond and beyond. We've summarized several approaches being pursued
+          by people across policy, advocacy, and grassroots/community. However,
+          we definitely need movement across all of these areas and more.
+          <span style="font-weight: bold"
+            >Some of these are contradictory solutions.</span
+          >
+        </p>
+      </div>
+    </div>
+    <div
+      class="flourish-embed flourish-network"
+      data-src="visualisation/13600317"
+      style="padding:5vh"
+    >
+      <script src="https://public.flourish.studio/resources/embed.js"></script>
+    </div>
+
+    <!-- bunch of stuff i need to fix but haven't gotten to  -->
     <div class="container">
       <div id="conclusion" class="content">
         <h2>This is just the beginning</h2>
