@@ -35,19 +35,54 @@
   <body>
     <nav id="navbar" class="nav-bar">
       <ul>
-        <li id="menu">
-          <span id="menu_bttn" class="material-symbols-outlined">menu</span>
+        <li id="Intro">
+          <span class="hover-image">
+            <img src="..\staticFiles\images\nav_icon\intro.svg"/>
+          </span>
+          <a href="#introduction">Introduction</a>
         </li>
-        <li id="logo">
-          <img src="../staticFiles/images/logo.png" alt="viz logo" />
+        <li id="Welcome">
+          <span class="hover-image">
+            <img src="..\staticFiles\images\nav_icon\richmond.svg"/>
+          </span>
+          <a href="#richmond_section">Richmond, CA</a>
         </li>
-        <li id="item3">item3</li>
+        <li id="HousingDisparities">
+          <span class="hover-image">
+            <img src="..\staticFiles\images\nav_icon\disparity.svg"/>
+          </span>
+          <a href="#notthesame">Disparities</a>
+        </li>
+        <li id="HousingHistory">
+          <span class="hover-image">
+            <img src="..\staticFiles\images\nav_icon\history.svg"/>
+          </span>
+          <a href="#history_roth">History</a>
+        </li>
+        <li id="HousingIssuesToday">
+          <span class="hover-image">
+            <img src="..\staticFiles\images\nav_icon\issues.svg"/>
+          </span>
+          <a href="#issues_today">Housing Issues Today</a>
+        </li>
+        <li id="SolutionsMenu">
+          <span class="hover-image">
+            <img src="..\staticFiles\images\nav_icon\solution.svg"/>
+          </span>
+          <a href="#solutions_menu">Solutions Menu</a>
+        </li>
+        <li id="BetterFuture">
+          <span class="hover-image">
+            <img src="..\staticFiles\images\nav_icon\future.svg"/>
+          </span>
+          <a href="#imagine_future">Imagine a Better Future</a>
+        </li>
       </ul>
     </nav>
 
     <div class="blank"></div>
     <!-- Introduction -->
-    <div class="section_wide">
+    <div class="section_wide" id="introduction">
       <div id="introduction" class="content_wide">
         <h1>Visualizing the Housing Crisis</h1>
         <h2>in Richmond, CA</h2>
@@ -88,7 +123,6 @@
     <!-- Welcome to Richmond,CA -->
     <div class="section_narrow" id="richmond_section">
       <div id="richmond" class="content_narrow">
-        <div class="blank_sm"></div>
         <h2>Welcome to Richmond, CA</h2>
         <div class="main_p">
           <p>
@@ -110,16 +144,17 @@
         </div>
       </div>
       <div class="image_box_med">
-        <img src="..\staticFiles\images\richmond\Richmond_CA.jpg" style="max-width:45vw;position:relative;left:2vw"/>
+
+        <img src="..\staticFiles\images\richmond\Richmond_CA.jpg" style="max-width:45vw;position:relative;left:2vw;"/>
         <p class="credit" style="width:100%;position:relative;left:2vw;">
-          Photo credit:https://en.wikipedia.org/wiki/Richmond,_California
+          Photo credit: <a href="https://en.wikipedia.org/wiki/Richmond,_California">Richmond, CA Wikipedia</a>
         </p>
       </div>
     </div>
-    <div class="blank_sm"></div>
+    <div class="blank"></div>
 
     <!-- Living in Richmond is not the same for everyone -->
-    <div class="section_narrow">
+    <div class="section_narrow" id="notthesame">
       <div class="content_narrow">
         <h2>Living in Richmond is Not the Same for Everyone</h2>
         <p>
@@ -485,7 +520,7 @@
     <!-- Issues in Housing Continue Today -->
     <div
       class="section_wide"
-      style="height: fit-content; background-color: var(--gray)"
+      style="height: fit-content; background-color: var(--gray)" id="issues_today"
     >
       <div class="content_wide">
         <h1>Issues in Housing Continue Today</h1>
@@ -544,7 +579,7 @@
     <!-- What's the fix? -->
     <div
       class="center_section"
-      style="height: fit-content; background-color: var(--gray)"
+      style="height: fit-content; background-color: var(--gray)" id="solutions_menu"
     >
       <div class="content_center">
         <h2 style="text-align: center">What's the Fix?</h2>
@@ -604,7 +639,7 @@
     </div>
 
     <!-- bunch of stuff i need to fix but haven't gotten to  -->
-    <div class="center_section">
+    <div class="center_section" id="imagine_future">
       <div id="conclusion" class="content_center">
         <h2 style="text-align: center">This is just the beginning</h2>
         <div style="display: flex; justify-content: center">

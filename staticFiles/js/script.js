@@ -4,7 +4,7 @@ window.onscroll = function () {
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.cssText = "top:0px; z-index:5;";
   } else {
-    document.getElementById("navbar").style.cssText = "top: -50px; z-index: 5;";
+    document.getElementById("navbar").style.cssText = "top: -61px; z-index: 5;";
   }
   prevScrollpos = currentScrollPos;
 };
