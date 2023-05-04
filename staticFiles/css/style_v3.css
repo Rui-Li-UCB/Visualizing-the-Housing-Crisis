@@ -178,7 +178,7 @@ p {
 }
 .theme_img img {
   position: absolute;
-  height: 65vh;
+  max-height: 65vh;
   max-width:30vw;
 }
 #hand {
