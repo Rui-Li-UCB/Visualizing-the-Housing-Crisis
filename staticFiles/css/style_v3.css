@@ -171,7 +171,8 @@ p {
 /* Introduction */
 #cover {
   position: relative;
-  justify-content: right;
+  display:flex;
+  justify-content: center;
 }
 .theme_img img {
   position: absolute;
