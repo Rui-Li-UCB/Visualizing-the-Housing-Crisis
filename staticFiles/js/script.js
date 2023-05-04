@@ -2,9 +2,9 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.cssText = "top:0px; z-index:4;";
+    document.getElementById("navbar").style.cssText = "top:0px; z-index:5;";
   } else {
-    document.getElementById("navbar").style.cssText = "top: -50px; z-index: 4;";
+    document.getElementById("navbar").style.cssText = "top: -50px; z-index: 5;";
   }
   prevScrollpos = currentScrollPos;
 };
