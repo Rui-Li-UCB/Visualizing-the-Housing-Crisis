@@ -1,0 +1,307 @@
+/* overall styles */
+
+html * {
+  font-family: "Lato";
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  --blue: #627c8d;
+  --skyblue: #b7e1f2;
+  --red: #a73838;
+  --green: #739c7e;
+  --mediumgreen: #577560;
+  --darkgreen: #28362b;
+  --white: #f2f2f2;
+  --gray: #c0bfbf;
+  --gray-dark: #747474;
+  --dark: #272626;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+.emphasis_p{
+  font-family: "Libre Baskerville", Times, serif;
+  text-align: left;
+  margin-bottom: 20px;
+  color: var(--blue);
+  padding-top: 2%;
+  padding-bottom: 0;
+
+  font-weight: bold
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  text-align: justify;
+  padding: 10px 0;
+}
+.credit {
+  font-family: "Libre Baskerville", Times, serif;
+  font-style: italic;
+  text-align: right;
+  font-size: 12px;
+  position: relative;
+  right: 2vh;
+}
+
+/* wide sections */
+.section_wide{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+  margin-top:80px;
+  text-align:justify;
+  padding:50px;
+  height:fit-content;
+  column-gap:2vw;
+}
+.content_wide{
+  grid-column: 1/4;
+  height:100%;
+}
+.content_wide p{
+  text-align: justify;
+}
+
+.image_box_sm{
+  grid-column:4/6;
+  height:75dvh;
+}
+
+/* narrow sections */
+.section_narrow{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin-top: 80px;
+  text-align: justify;
+  padding: 50px;
+  height: fit-content;
+  column-gap: 5vw;
+}
+.content_narrow {
+  grid-column: 1/2;
+  height: 100%;
+}
+.content_narrow p{
+  text-align:justify;
+}
+.image_box_med{
+  grid-column:2/4;
+  height:75dvh;
+}
+.image_box_med p{
+  width:80%;
+}
+/* center sections */
+.center_section{
+  text-align: center;
+  padding: 50px;
+  min-height: 60vh;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+.content_center{
+  width:55vw;
+  text-align:justify;
+}
+.center_section p{
+  text-align: center;
+}
+
+
+
+/* nav bar */
+#navbar {
+  left: 0;
+  right: 0;
+  background-color: var(--dark);
+  position: fixed;
+  transition: top 0.5s;
+  z-index: 0;
+  top: 0;
+}
+.nav-bar ul {
+  display: grid;
+  color: var(--white);
+  margin: 0;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 50px;
+  padding-inline-start: 0;
+  align-content: space-between;
+  align-items: center;
+}
+.nav-bar li {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+.nav-bar #menu {
+  grid-column: 1/2;
+  text-align: left;
+}
+#menu_bttn {
+  padding-left: 10px;
+}
+.nav-bar #logo {
+  grid-column: 2/3;
+}
+#logo img {
+  width: 200px;
+}
+.nav-bar #item3 {
+  grid-column: 3/4;
+}
+
+/* blank spaces */
+.blank{
+  height:15vh;
+  width:100%;
+}
+.blank_sm{
+  height:10vh;
+  width:100%;
+}
+
+/* Introduction */
+#cover {
+  position: relative;
+  top: -10vh;
+  justify-content: right;
+}
+.theme_img img {
+  position: absolute;
+  height: 65vh;
+}
+#hand {
+  z-index: 3;
+}
+#house {
+  z-index: 2;
+}
+#bg {
+  z-index: 1;
+}
+#intro_crdt{
+  bottom:-70%;
+}
+
+/* Living in Richmond is not the same for everyone */
+#restrictive_cov{
+  max-width:70%;
+  position:relative;
+  left:5vw;
+  padding:10px;
+  border:solid var(--dark);
+}
+#cov_crdt{
+  max-width:85%;
+}
+#cov_txt{
+  max-width:70%;
+  position:relative;
+  left:5vw;
+  color:var(--blue)
+}
+#wvb{
+  background-color: var(--gray);
+}
+
+/* Redlining */
+#redlining{
+  height:fit-content;
+}
+#redline_quote_div{
+  width:65%;
+  position:relative;
+  left:17.5%;
+}
+#redline_quote{
+  font-weight:normal;
+  font-style:italic;
+  font-size:12px;
+}
+#redline{
+  width:100%;
+  padding:0;
+  margin:0;
+}
+
+/* How did we get here? Let's Go Back in Time */
+#history h1{
+  text-align:center;
+}
+#history_roth{
+  height:fit-content;
+  padding-top:0;
+  margin:0;
+}
+#history_timepoints{
+  width:75%;
+  position:relative;
+  left:25%;
+}
+
+
+/* Test */
+
+button {
+  margin-top: 50px;
+  background-color: rgba(255,255,255,0.3);
+  border: 3px solid #F04A49;
+  color: #F04A49;
+  font-size: 25px;
+  padding: 10px 20px;
+  
+}
+
+button:hover {
+  background-color: #F04A49;
+  color: #FFF;
+  border: 3px solid #F04A49;
+  transition: all 0.3s ease 0s;
+}
+
+.popupk {
+display: none;
+position: fixed;
+padding: 10px;
+width: 280px;
+left: 50%;
+margin-left: -150px;
+height: 180px;
+top: 50%;
+margin-top: -100px;
+background: #FFF;
+border: 3px solid #F04A49;
+z-index: 20;
+}
+
+#popupk:after {
+position: fixed;
+content: "";
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+background: rgba(0,0,0,0.5);
+z-index: -2;
+}
+
+#popupk:before {
+position: absolute;
+content: "";
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+background: #FFF;
+z-index: -1;
+}
