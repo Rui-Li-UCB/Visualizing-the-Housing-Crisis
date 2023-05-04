@@ -27,7 +27,7 @@ body {
 }
 
 .emphasis_p{
-  font-family: "Lato", sans-serif;
+  font-family: "Libre Baskerville", Times, serif;
   text-align: left;
   margin-bottom: 20px;
   color: var(--blue);
@@ -37,16 +37,9 @@ body {
   font-weight: bold
 }
 
-.disclaimer{
-  font-family: "Lato", sans-serif;
-  font-size:14px;
-  padding-top:0;
-  text-align:justify;
-}
-
 p {
   font-family: "Lato", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   text-align: justify;
   padding: 10px 0;
 }
@@ -54,24 +47,23 @@ p {
   font-family: "Libre Baskerville", Times, serif;
   font-style: italic;
   text-align: right;
-  font-size: 14px;
+  font-size: 12px;
   position: relative;
-  /* right: 2vh; */
 }
-
 
 /* wide sections */
 .section_wide{
   display: grid;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+  margin-top:80px;
   text-align:justify;
   padding:50px;
   height:fit-content;
-  column-gap:2vw;
+  column-gap:5vw;
 }
 .content_wide{
   grid-column: 1/4;
-  height:fit-content;
+  height:100%;
 }
 .content_wide p{
   text-align: justify;
@@ -79,19 +71,19 @@ p {
 
 .image_box_sm{
   grid-column:4/6;
-  height:fit-content;
-  max-width:30vw;
+  height:75dvh;
 }
 
 /* narrow sections */
-.section_narrow{
+.section_narrow {
   display: grid;
   grid-template-columns: 2fr 2fr;
   text-align: justify;
   padding: 50px;
   height: fit-content;
-  column-gap: 2vw;
+  column-gap: 5vw;
 }
+
 .content_narrow {
   grid-column: 1/2;
   height: 100%;
@@ -101,20 +93,20 @@ p {
 }
 .image_box_med{
   grid-column:2/4;
-  height:65dvh;
-  max-width:fit-content;
+  height:75dvh;
+  width:fit-content;
 }
-
+.image_box_med p{
+  width:80%;
+}
 /* center sections */
 .center_section{
   text-align: center;
   padding: 50px;
   min-height: 60vh;
+  margin-top: 80px;
   display: flex;
   justify-content: center;
-}
-.center_section h1 h2 h3{
-  text-align:center;
 }
 .content_center{
   width:55vw;
@@ -123,8 +115,6 @@ p {
 .center_section p{
   text-align: center;
 }
-
-
 
 /* nav bar */
 #navbar {
@@ -169,13 +159,13 @@ p {
 }
 
 /* blank spaces */
-.blank{
-  height:15vh;
-  width:100%;
+.blank {
+  height: 15vh;
+  width: 100%;
 }
-.blank_sm{
-  height:10vh;
-  width:100%;
+.blank_sm {
+  height: 10vh;
+  width: 100%;
 }
 
 /* Introduction */
@@ -186,7 +176,7 @@ p {
 .theme_img img {
   position: absolute;
   max-height: 70vh;
-  max-width:30vw;
+  max-width: 30vw;
 }
 #hand {
   z-index: 3;
@@ -197,66 +187,65 @@ p {
 #bg {
   z-index: 1;
 }
-#intro_crdt{
-  bottom:-70%;
+#intro_crdt {
+  bottom: -70%;
 }
 
 /* Living in Richmond is not the same for everyone */
-#restrictive_cov{
-  max-width:70%;
-  position:relative;
-  left:5vw;
-  padding:10px;
-  border:solid var(--dark);
+#restrictive_cov {
+  max-width: 70%;
+  position: relative;
+  left: 5vw;
+  padding: 10px;
+  border: solid var(--dark);
 }
-#cov_crdt{
-  max-width:85%;
+#cov_crdt {
+  max-width: 85%;
 }
-#cov_txt{
-  max-width:70%;
-  position:relative;
-  left:5vw;
-  color:var(--blue)
+#cov_txt {
+  max-width: 70%;
+  position: relative;
+  left: 5vw;
+  color: var(--blue);
 }
-#wvb{
+#wvb {
   background-color: var(--gray);
 }
 
 /* Redlining */
-#redlining{
-  height:fit-content;
+#redlining {
+  height: fit-content;
 }
-#redline_quote_div{
-  width:65%;
-  position:relative;
-  left:17.5%;
+#redline_quote_div {
+  width: 65%;
+  position: relative;
+  left: 17.5%;
 }
-#redline_quote{
-  font-weight:normal;
-  font-style:italic;
-  font-size:12px;
+#redline_quote {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 12px;
 }
-#redline{
-  width:100%;
-  padding:0;
-  margin:0;
+#redline {
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 /* How did we get here? Let's Go Back in Time */
-#history h1{
-  text-align:center;
+#history h1 {
+  text-align: center;
 }
-#history_roth{
-  height:fit-content;
-  padding-top:0;
-  margin:0;
+#history_roth {
+  height: fit-content;
+  padding-top: 0;
+  margin: 0;
 }
-#history_timepoints{
-  width:75%;
-  position:relative;
-  left:25%;
+#history_timepoints {
+  width: 75%;
+  position: relative;
+  left: 25%;
 }
-
 
 /* Test */
 .curtain {
@@ -306,71 +295,70 @@ p {
   z-index: 4;
   height: 131px;
   width: 106px;
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
   border: black solid;
   overflow-y: hidden;
-  top:328px;
-  left:-200px;
+  top: 328px;
+  left: -200px;
 }
-#decor{
-  position:absolute;
-  z-index:5;
-  height:20vh;
-  top:0px;
-  left:0px;
+#decor {
+  position: absolute;
+  z-index: 5;
+  height: 20vh;
+  top: 0px;
+  left: 0px;
 }
 
 button {
   margin-top: 50px;
-  background-color: rgba(255,255,255,0.3);
-  border: 3px solid #F04A49;
-  color: #F04A49;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 3px solid #f04a49;
+  color: #f04a49;
   font-size: 25px;
   padding: 10px 20px;
-  
 }
 
 button:hover {
-  background-color: #F04A49;
-  color: #FFF;
-  border: 3px solid #F04A49;
+  background-color: #f04a49;
+  color: #fff;
+  border: 3px solid #f04a49;
   transition: all 0.3s ease 0s;
 }
 
 .popup {
-display: none;
-position: fixed;
-padding: 10px;
-width: 280px;
-left: 50%;
-margin-left: -150px;
-height: 180px;
-top: 50%;
-margin-top: -100px;
-background: #FFF;
-border: 3px solid #F04A49;
-z-index: 20;
+  display: none;
+  position: fixed;
+  padding: 10px;
+  width: 280px;
+  left: 50%;
+  margin-left: -150px;
+  height: 180px;
+  top: 50%;
+  margin-top: -100px;
+  background: #fff;
+  border: 3px solid #f04a49;
+  z-index: 20;
 }
 
 #popup:after {
-position: fixed;
-content: "";
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-background: rgba(0,0,0,0.5);
-z-index: -2;
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -2;
 }
 
 #popup:before {
-position: absolute;
-content: "";
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-background: #FFF;
-z-index: -1;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  z-index: -1;
 }
