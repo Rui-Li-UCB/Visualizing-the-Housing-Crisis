@@ -27,7 +27,7 @@ body {
 }
 
 .emphasis_p{
-  font-family: "Libre Baskerville", Times, serif;
+  font-family: "Lato", sans-serif;
   text-align: left;
   margin-bottom: 20px;
   color: var(--blue);
@@ -170,6 +170,7 @@ p {
 
 /* Introduction */
 #cover {
+  top:5vh;
   position: relative;
   display:flex;
   justify-content: center;
