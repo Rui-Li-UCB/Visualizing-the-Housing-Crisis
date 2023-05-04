@@ -90,7 +90,7 @@ p {
   text-align: justify;
   padding: 50px;
   height: fit-content;
-  column-gap: 5vw;
+  column-gap: 2vw;
 }
 .content_narrow {
   grid-column: 1/2;
@@ -102,7 +102,7 @@ p {
 .image_box_med{
   grid-column:2/4;
   height:65dvh;
-  width:fit-content;
+  max-width:fit-content;
 }
 
 /* center sections */
