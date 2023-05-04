@@ -56,7 +56,7 @@ p {
   text-align: right;
   font-size: 14px;
   position: relative;
-  right: 2vh;
+  /* right: 2vh; */
 }
 
 
@@ -79,7 +79,8 @@ p {
 
 .image_box_sm{
   grid-column:4/6;
-  height:60dvh;
+  height:fit-content;
+  max-width:30vw;
 }
 
 /* narrow sections */
@@ -100,11 +101,10 @@ p {
 }
 .image_box_med{
   grid-column:2/4;
-  height:60dvh;
+  height:65dvh;
+  width:fit-content;
 }
-.image_box_med p{
-  width:80%;
-}
+
 /* center sections */
 .center_section{
   text-align: center;
@@ -112,6 +112,9 @@ p {
   min-height: 60vh;
   display: flex;
   justify-content: center;
+}
+.center_section h1 h2 h3{
+  text-align:center;
 }
 .content_center{
   width:55vw;
@@ -178,12 +181,11 @@ p {
 /* Introduction */
 #cover {
   position: relative;
-  top: -10vh;
   justify-content: right;
 }
 .theme_img img {
   position: absolute;
-  max-height: 65vh;
+  max-height: 70vh;
   max-width:30vw;
 }
 #hand {
