@@ -27,7 +27,7 @@ body {
 }
 
 .emphasis_p{
-  font-family: "Libre Baskerville", Times, serif;
+  font-family: "Lato", sans-serif;
   text-align: left;
   margin-bottom: 20px;
   color: var(--blue);
@@ -37,9 +37,16 @@ body {
   font-weight: bold
 }
 
+.disclaimer{
+  font-family: "Lato", sans-serif;
+  font-size:14px;
+  padding-top:0;
+  text-align:justify;
+}
+
 p {
   font-family: "Lato", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   text-align: justify;
   padding: 10px 0;
 }
@@ -47,16 +54,16 @@ p {
   font-family: "Libre Baskerville", Times, serif;
   font-style: italic;
   text-align: right;
-  font-size: 12px;
+  font-size: 14px;
   position: relative;
   right: 2vh;
 }
+
 
 /* wide sections */
 .section_wide{
   display: grid;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-  margin-top:80px;
   text-align:justify;
   padding:50px;
   height:fit-content;
@@ -64,7 +71,7 @@ p {
 }
 .content_wide{
   grid-column: 1/4;
-  height:100%;
+  height:fit-content;
 }
 .content_wide p{
   text-align: justify;
@@ -72,14 +79,13 @@ p {
 
 .image_box_sm{
   grid-column:4/6;
-  height:75dvh;
+  height:60dvh;
 }
 
 /* narrow sections */
 .section_narrow{
   display: grid;
   grid-template-columns: 2fr 2fr;
-  margin-top: 80px;
   text-align: justify;
   padding: 50px;
   height: fit-content;
@@ -94,7 +100,7 @@ p {
 }
 .image_box_med{
   grid-column:2/4;
-  height:75dvh;
+  height:60dvh;
 }
 .image_box_med p{
   width:80%;
@@ -104,7 +110,6 @@ p {
   text-align: center;
   padding: 50px;
   min-height: 60vh;
-  margin-top: 80px;
   display: flex;
   justify-content: center;
 }
