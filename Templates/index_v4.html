@@ -1,189 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" conten qt="" />
+    <meta name="author" content="" />
 
-<head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" conten qt="" />
-  <meta name="author" content="" />
+    <title>Visualizing the Housing Crisis</title>
 
-  <title>Visualizing the Housing Crisis</title>
+    <!-- fonts style -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre Baskerville"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="../staticFiles/css/style_v3.css" rel="stylesheet" />
 
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Libre Baskerville" rel="stylesheet" />
-  <!-- Custom styles for this template -->
-  <link href="../staticFiles/css/style_v3.css" rel="stylesheet" />
+    <!-- google icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
 
-  <!-- google icons -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-</head>
+  <body>
+    <nav id="navbar" class="nav-bar">
+      <ul>
+        <li id="Intro">
+          <span class="hover-image">
+            <img src="..\staticFiles\images\nav_icon\intro.svg" />
+          </span>
+          <a href="#introduction">Introduction</a>
+        </li>
+        <li id="Welcome">
+          <span class="hover-image">
+            <img src="..\staticFiles\images\nav_icon\richmond.svg" />
+          </span>
+          <a href="#richmond_section">Richmond, CA</a>
+        </li>
+        <li id="HousingDisparities">
+          <span class="hover-image">
+            <img src="..\staticFiles\images\nav_icon\disparity.svg" />
+          </span>
+          <a href="#notthesame">Disparities</a>
+        </li>
+        <li id="HousingHistory">
+          <span class="hover-image">
+            <img src="..\staticFiles\images\nav_icon\history.svg" />
+          </span>
+          <a href="#history_roth">History</a>
+        </li>
+        <li id="HousingIssuesToday">
+          <span class="hover-image">
+            <img src="..\staticFiles\images\nav_icon\issues.svg" />
+          </span>
+          <a href="#issues_today">Housing Issues Today</a>
+        </li>
+        <li id="SolutionsMenu">
+          <span class="hover-image">
+            <img src="..\staticFiles\images\nav_icon\solution.svg" />
+          </span>
+          <a href="#solutions_menu">Solutions Menu</a>
+        </li>
+        <li id="BetterFuture">
+          <span class="hover-image">
+            <img src="..\staticFiles\images\nav_icon\future.svg" />
+          </span>
+          <a href="#imagine_future">Imagine a Better Future</a>
+        </li>
+      </ul>
+    </nav>
 
-<body>
-  <nav id="navbar" class="nav-bar">
-    <ul>
-      <li id="Intro">
-        <span class="hover-image">
-          <img src="..\staticFiles\images\nav_icon\intro.svg" />
-        </span>
-        <a href="#introduction">Introduction</a>
-      </li>
-      <li id="Welcome">
-        <span class="hover-image">
-          <img src="..\staticFiles\images\nav_icon\richmond.svg" />
-        </span>
-        <a href="#richmond_section">Richmond, CA</a>
-      </li>
-      <li id="HousingDisparities">
-        <span class="hover-image">
-          <img src="..\staticFiles\images\nav_icon\disparity.svg" />
-        </span>
-        <a href="#notthesame">Disparities</a>
-      </li>
-      <li id="HousingHistory">
-        <span class="hover-image">
-          <img src="..\staticFiles\images\nav_icon\history.svg" />
-        </span>
-        <a href="#history_roth">History</a>
-      </li>
-      <li id="HousingIssuesToday">
-        <span class="hover-image">
-          <img src="..\staticFiles\images\nav_icon\issues.svg" />
-        </span>
-        <a href="#issues_today">Housing Issues Today</a>
-      </li>
-      <li id="SolutionsMenu">
-        <span class="hover-image">
-          <img src="..\staticFiles\images\nav_icon\solution.svg" />
-        </span>
-        <a href="#solutions_menu">Solutions Menu</a>
-      </li>
-      <li id="BetterFuture">
-        <span class="hover-image">
-          <img src="..\staticFiles\images\nav_icon\future.svg" />
-        </span>
-        <a href="#imagine_future">Imagine a Better Future</a>
-      </li>
-    </ul>
-  </nav>
-
-  <div class="blank"></div>
-  <!-- Introduction -->
-  <div class="section_wide" id="introduction">
-    <div id="introduction" class="content_wide">
-      <h1>Visualizing the Housing Crisis</h1>
-      <h2>in Richmond, CA</h2>
-      <p class="emphasis_p">Everyone deserves housing.</p>
-      <div>
-        <p>
-          And yet current & historical practices of exclusionary policy,
-          rising rents, and slow development have contributed to the
-          affordable housing shortage, inequitable evictions, and broad
-          displacement that make up the “housing crisis” today. Whether or not
-          you’ve heard of this term, it's important to understand the elements
-          that make this such a complex problem.
-        </p>
-        <p class="emphasis_p">
-          We believe that knowledge can empower positive change— this crisis
-          is complex, but this is a great place to get started.
-        </p>
-        <p>
-          Understanding the legacy of the past will help contextualize the
-          present, and work towards a more just future—we hope you'll come
-          away with an understand the affordable housing crisis by exploring
-          this case study of Richmond, CA.
-        </p>
-      </div>
-    </div>
-    <div class="image_box_sm">
-      <div id="cover" class="theme_img">
-        <img id="hand" src="../staticFiles/images/house_hand/hand.png" />
-        <img id="house" src="../staticFiles/images/house_hand/house.png" />
-        <img id="bg" src="../staticFiles/images/house_hand/bg.png" />
-      </div>
-    </div>
-    <br />
-  </div>
-  <div class="blank_sm"></div>
-
-  <!-- Welcome to Richmond,CA -->
-  <div class="section_narrow" id="richmond_section">
-    <div id="richmond" class="content_narrow">
-      <h2>Welcome to Richmond, CA</h2>
-      <div class="main_p">
-        <p>
-          Located in Contra Costa county in the East San Francisco Bay Area,
-          the city of Richmond is racially and economically diverse. Richmond
-          feels like the average American city. A small, working-class
-          suburban community, it went through a period of post-WWII
-          industrialization and has a vibrant town known for grassroots
-          engagement, including in the housing space.
-        </p>
-        <h3>Richmond by the numbers:</h3>
-        <p class="disclaimer">*statistics of 2021 Census</p>
+    <div class="blank"></div>
+    <!-- Introduction -->
+    <div class="section_wide" id="introduction">
+      <div id="introduction" class="content_wide">
+        <h1>Visualizing the Housing Crisis</h1>
+        <h2>in Richmond, CA</h2>
+        <p class="emphasis_p">Everyone deserves housing.</p>
         <div>
-          <object type="image/svg+xml" data="..\staticFiles\images\richmond_stat\rch_stat.svg"></object>
+          <p>
+            And yet current & historical practices of exclusionary policy,
+            rising rents, and slow development have contributed to the
+            affordable housing shortage, inequitable evictions, and broad
+            displacement that make up the “housing crisis” today. Whether or not
+            you’ve heard of this term, it's important to understand the elements
+            that make this such a complex problem.
+          </p>
+          <p class="emphasis_p">
+            We believe that knowledge can empower positive change— this crisis
+            is complex, but this is a great place to get started.
+          </p>
+          <p>
+            Understanding the legacy of the past will help contextualize the
+            present, and work towards a more just future—we hope you'll come
+            away with an understand the affordable housing crisis by exploring
+            this case study of Richmond, CA.
+          </p>
         </div>
       </div>
-    </div>
-    <div class="image_box_med">
-      <img src="..\staticFiles\images\richmond\Richmond_CA.jpg"
-        style="max-width: 45vw; position: relative; left: 2vw" />
-      <p class="credit" style="width: 97%">
-        Photo credit:
-        <a href="https://en.wikipedia.org/wiki/Richmond,_California">Richmond, CA Wikipedia</a>
-      </p>
-    </div>
-  </div>
-
-  <div class="blank_sm"></div>
-
-  <!-- Living in Richmond is not the same for everyone -->
-  <div class="center_section" id="notthesame">
-    <div class="content_center">
-      <h2>Living in Richmond is Not the Same for Everyone</h2>
-      <p>
-        Like many cities across the United States, life in Richmond is
-        different depending on who you are and where you live. We see this
-        most clearly by looking at the different impacts of the housing crisis
-        on different groups of people, and most starkly in the housing
-        outcomes between White and Black populations. Let’s look at some of
-        these differences across zoning, renting vs. homeownership, and
-        evictions.
-      </p>
-
-      <div class="blank_sm"></div>
-
-      <!-- Zoning -->
-      <h3 style="text-align: center">Where you live</h3>
-      <p>
-        Zoning laws shape how we live. From commercial shopping centers to
-        farms to new housing, they govern what can be built, and where. These
-        highly prescriptive rules dictate construction between single-family
-        homes and dense multi-family apartment complexes. Research by the
-        Othering and Belonging Institute shows that residing in single-family
-        zones is highly correlated with better quality-of-life: in fact, they
-        state, “...cities with high levels of single-family zoning have
-        greater resources in virtually every statistic we are able to
-        measure.”
-      </p>
-      <div style="display: flex; justify-content: center">
-        <img src="..\staticFiles\images\disparity\Disparate Impacts Viz.svg" />
+      <div class="image_box_sm">
+        <div id="cover" class="theme_img">
+          <img id="hand" src="../staticFiles/images/house_hand/hand.png" />
+          <img id="house" src="../staticFiles/images/house_hand/house.png" />
+          <img id="bg" src="../staticFiles/images/house_hand/bg.png" />
+        </div>
       </div>
       <br />
-      <p>
-        Unfortunately, residence in single family zones break sharply on
-        racial lines. White residents are more likely to live in single-family
-        zones, while Black residents are more likely to reside in multifamily
-        zones.
-      </p>
-      <!-- <div class="image_box_med">
+    </div>
+    <div class="blank_sm"></div>
+
+    <!-- Welcome to Richmond,CA -->
+    <div class="section_narrow" id="richmond_section">
+      <div id="richmond" class="content_narrow">
+        <h2>Welcome to Richmond, CA</h2>
+        <div class="main_p">
+          <p>
+            Located in Contra Costa county in the East San Francisco Bay Area,
+            the city of Richmond is racially and economically diverse. Richmond
+            feels like the average American city. A small, working-class
+            suburban community, it went through a period of post-WWII
+            industrialization and has a vibrant town known for grassroots
+            engagement, including in the housing space.
+          </p>
+          <h3>Richmond by the numbers:</h3>
+          <p class="disclaimer">*statistics of 2021 Census</p>
+          <div>
+            <object
+              type="image/svg+xml"
+              data="..\staticFiles\images\richmond_stat\rch_stat.svg"
+            ></object>
+          </div>
+        </div>
+      </div>
+      <div class="image_box_med">
+        <img
+          src="..\staticFiles\images\richmond\Richmond_CA.jpg"
+          style="max-width: 45vw; position: relative; left: 2vw"
+        />
+        <p class="credit" style="width: 97%">
+          Photo credit:
+          <a href="https://en.wikipedia.org/wiki/Richmond,_California"
+            >Richmond, CA Wikipedia</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <div class="blank_sm"></div>
+
+    <!-- Living in Richmond is not the same for everyone -->
+    <div class="center_section" id="notthesame">
+      <div class="content_center">
+        <h2>Living in Richmond is Not the Same for Everyone</h2>
+        <p>
+          Like many cities across the United States, life in Richmond is
+          different depending on who you are and where you live. We see this
+          most clearly by looking at the different impacts of the housing crisis
+          on different groups of people, and most starkly in the housing
+          outcomes between White and Black populations. Let’s look at some of
+          these differences across zoning, renting vs. homeownership, and
+          evictions.
+        </p>
+
+        <div class="blank_sm"></div>
+
+        <!-- Zoning -->
+        <h3 style="text-align: center">Where you live</h3>
+        <p>
+          Zoning laws shape how we live. From commercial shopping centers to
+          farms to new housing, they govern what can be built, and where. These
+          highly prescriptive rules dictate construction between single-family
+          homes and dense multi-family apartment complexes. Research by the
+          Othering and Belonging Institute shows that residing in single-family
+          zones is highly correlated with better quality-of-life: in fact, they
+          state, “...cities with high levels of single-family zoning have
+          greater resources in virtually every statistic we are able to
+          measure.”
+        </p>
+        <div style="display: flex; justify-content: center">
+          <img
+            src="..\staticFiles\images\disparity\Disparate Impacts Viz.svg"
+          />
+        </div>
+        <br />
+        <p>
+          Unfortunately, residence in single family zones break sharply on
+          racial lines. White residents are more likely to live in single-family
+          zones, while Black residents are more likely to reside in multifamily
+          zones.
+        </p>
+        <!-- <div class="image_box_med">
         <div class="blank_sm"></div>
         <img
           id="restrictive_cov"
@@ -197,542 +213,674 @@
         </p>
       </div> -->
 
-      <!-- Renting vs. Owning: Building Generational Wealth -->
-      <div class="blank_sm"></div>
-      <h3>Who owns homes in Richmond?</h3>
-      <p>
-        Homeownership is one of the primary methods for building generational
-        wealth and accessing the improved quality-of-life that comes with it.
-        Owning a home can provide greater stability than renting by allowing
-        residents to stay in their community, build long-term equity, and to
-        invest in their community’s education and other public services
-        through their home’s property taxes.  Like many other cities in
-        California, Richmond’s homeownership has often been restricted to
-        wealthy white neighborhoods and maintained through policies such as
-        Proposition 13, which defines state increase in property tax. 
-      </p>
-      <div class="tableauPlaceholder" id="viz1683257775144" style="position: relative">
-        <noscript><a href="#"><img alt="Homeowners by Race in Richmond, 2021 "
-              src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;re&#47;renterownermaps&#47;owner_bar&#47;1_rss.png"
-              style="border: none" /></a></noscript><object class="tableauViz" style="display: none">
-          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
-          <param name="embed_code_version" value="3" />
-          <param name="site_root" value="" />
-          <param name="name" value="renterownermaps&#47;owner_bar" />
-          <param name="tabs" value="no" />
-          <param name="toolbar" value="yes" />
-          <param name="static_image"
-            value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;re&#47;renterownermaps&#47;owner_bar&#47;1.png" />
-          <param name="animate_transition" value="yes" />
-          <param name="display_static_image" value="yes" />
-          <param name="display_spinner" value="yes" />
-          <param name="display_overlay" value="yes" />
-          <param name="display_count" value="yes" />
-          <param name="language" value="en-US" />
-          <param name="filter" value="publish=yes" />
-        </object>
-      </div>
-      <script type="text/javascript">
-        var divElement = document.getElementById("viz1683257775144");
-        var vizElement = divElement.getElementsByTagName("object")[0];
-        vizElement.style.width = "100%";
-        vizElement.style.height = "200px";
-        var scriptElement = document.createElement("script");
-        scriptElement.src =
-          "https://public.tableau.com/javascripts/api/viz_v1.js";
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
-      </script>
-      <p>
-        In Richmond, white residents own homes at more than 2x Black residents
-        and 1.3x Hispanic residents. For renting, Hispanic residents rent
-        almost 2x more and Black residents rent around 1.5x more than White
-        residents.
-      </p>
-      <div class="blank_sm"></div>
-
-      <!-- Evictions -->
-      <h3>Who faces eviction?</h3>
-      <p>
-        Who is evicted is related to one’s socioeconomic and geographic
-        reality. Eviction is one of the most common methods of displacement,
-        which is when a resident is forced to move against their will.
-        Displacement can have negative effects ranging from worse physical and
-        mental health, more emergency room visits, lower educational outcomes
-        for children, food insecurity, to higher rates of future homelessness.
-      </p>
-      <p>
-        Using data from when tenants are officially removed from their home by
-        the county sheriff from January 2017 to March 2022, the Eviction
-        Research Network finds that there are significant racial disparities
-        in evictions in Richmond. Note that this dataset is a severe
-        undercount of the actual number of evictions occurring, but it is
-        still representative of a larger trend.
-      </p>
-      <br />
-      <div class="section_narrow" style="padding: 0; column-gap: 2vw">
-        <div class="content_narrow">
-          <br />
-          <br />
-          <p style="width: 100%; text-align: left">
-            This map shows neighborhoods with the highest levels of recorded
-            evictions:
-            <span style="color: var(--blue); font-weight: bold">the Iron Triangle</span>,
-            <span style="font-weight: bold">Panhandle, and Hilltop.</span>
-            These neighborhoods are predominantly Black and Hispanic. The
-            current housing landscape places the vulnerable - who are often
-            racial minorities - in precarious situations rather than support
-            them.
-          </p>
+        <!-- Renting vs. Owning: Building Generational Wealth -->
+        <div class="blank_sm"></div>
+        <h3>Who owns homes in Richmond?</h3>
+        <p>
+          Homeownership is one of the primary methods for building generational
+          wealth and accessing the improved quality-of-life that comes with it.
+          Owning a home can provide greater stability than renting by allowing
+          residents to stay in their community, build long-term equity, and to
+          invest in their community’s education and other public services
+          through their home’s property taxes.  Like many other cities in
+          California, Richmond’s homeownership has often been restricted to
+          wealthy white neighborhoods and maintained through policies such as
+          Proposition 13, which defines state increase in property tax. 
+        </p>
+        <div
+          class="tableauPlaceholder"
+          id="viz1683257775144"
+          style="position: relative"
+        >
+          <noscript
+            ><a href="#"
+              ><img
+                alt="Homeowners by Race in Richmond, 2021 "
+                src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;re&#47;renterownermaps&#47;owner_bar&#47;1_rss.png"
+                style="border: none" /></a></noscript
+          ><object class="tableauViz" style="display: none">
+            <param
+              name="host_url"
+              value="https%3A%2F%2Fpublic.tableau.com%2F"
+            />
+            <param name="embed_code_version" value="3" />
+            <param name="site_root" value="" />
+            <param name="name" value="renterownermaps&#47;owner_bar" />
+            <param name="tabs" value="no" />
+            <param name="toolbar" value="yes" />
+            <param
+              name="static_image"
+              value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;re&#47;renterownermaps&#47;owner_bar&#47;1.png"
+            />
+            <param name="animate_transition" value="yes" />
+            <param name="display_static_image" value="yes" />
+            <param name="display_spinner" value="yes" />
+            <param name="display_overlay" value="yes" />
+            <param name="display_count" value="yes" />
+            <param name="language" value="en-US" />
+            <param name="filter" value="publish=yes" />
+          </object>
         </div>
+        <script type="text/javascript">
+          var divElement = document.getElementById("viz1683257775144");
+          var vizElement = divElement.getElementsByTagName("object")[0];
+          vizElement.style.width = "100%";
+          vizElement.style.height = "200px";
+          var scriptElement = document.createElement("script");
+          scriptElement.src =
+            "https://public.tableau.com/javascripts/api/viz_v1.js";
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+        <p>
+          In Richmond, white residents own homes at more than 2x Black residents
+          and 1.3x Hispanic residents. For renting, Hispanic residents rent
+          almost 2x more and Black residents rent around 1.5x more than White
+          residents.
+        </p>
+        <div class="blank_sm"></div>
 
-        <div class="image_box_med">
-          <div class="tableauPlaceholder" id="viz1683249159917" style="position: relative">
-            <noscript><a href="#"><img alt="Majority Race by Tract (2021) versus Evictions  (Jan 2017- Mar 2022) "
-                  src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ev&#47;Eviction_Map_Update&#47;Sheet1&#47;1_rss.png"
-                  style="border: none" /></a></noscript><object class="tableauViz" style="display: none">
-              <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
-              <param name="embed_code_version" value="3" />
-              <param name="path"
-                value="views&#47;Eviction_Map_Update&#47;Sheet1?:language=en-US&amp;:embed=true&amp;publish=yes" />
-              <param name="toolbar" value="yes" />
-              <param name="static_image"
-                value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ev&#47;Eviction_Map_Update&#47;Sheet1&#47;1.png" />
-              <param name="animate_transition" value="yes" />
-              <param name="display_static_image" value="yes" />
-              <param name="display_spinner" value="yes" />
-              <param name="display_overlay" value="yes" />
-              <param name="display_count" value="yes" />
-              <param name="language" value="en-US" />
-              <param name="filter" value="publish=yes" />
-            </object>
-          </div>
-          <script type="text/javascript">
-            var divElement = document.getElementById("viz1683249159917");
-            var vizElement = divElement.getElementsByTagName("object")[0];
-            vizElement.style.width = "100%";
-            vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
-            var scriptElement = document.createElement("script");
-            scriptElement.src =
-              "https://public.tableau.com/javascripts/api/viz_v1.js";
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);
-          </script>
-        </div>
-      </div>
-      <br />
-      <h2>
-        Federal, state, and local governments tried to reduce the impact of
-        evictions during the COVID-19 pandemic by passing an eviction
-        moratorium. However...
-      </h2>
-      <p>
-        While moratoria reduced evictions overall during the COVID-19 pandemic
-        in 2020, Black and Hispanic residents are still evicted at higher
-        rates compared to White and Asian residents. In 2017, there were 3.5
-        Black and 2.5 Hispanic evictions for every 1 White eviction. In 2021,
-        there were 3.5 Black evictions and 4 Hispanic eviction for every White
-        eviction.
-      </p>
-
-      <div class="section_narrow" style="padding: 0; column-gap: 2vw">
-        <div class="content_narrow">
-          <img src="..\staticFiles\images\eviction_map\eviction rate iso.svg" style="width: 98%" />
-        </div>
-        <div class="image_box_med" style="text-align: left">
-          <div class="tableauPlaceholder" id="viz1683250275111" style="position: relative">
-            <noscript><a href="#"><img alt="Yearly evictions in Richmond, CA by race (Jan. 2017 - Mar. 2022) "
-                  src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ev&#47;evictionovertime&#47;Sheet2&#47;1_rss.png"
-                  style="border: none" /></a></noscript><object class="tableauViz" style="display: none">
-              <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
-              <param name="embed_code_version" value="3" />
-              <param name="site_root" value="" />
-              <param name="name" value="evictionovertime&#47;Sheet2" />
-              <param name="tabs" value="no" />
-              <param name="toolbar" value="yes" />
-              <param name="static_image"
-                value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ev&#47;evictionovertime&#47;Sheet2&#47;1.png" />
-              <param name="animate_transition" value="yes" />
-              <param name="display_static_image" value="yes" />
-              <param name="display_spinner" value="yes" />
-              <param name="display_overlay" value="yes" />
-              <param name="display_count" value="yes" />
-              <param name="language" value="en-US" />
-              <param name="filter" value="publish=yes" />
-            </object>
-          </div>
-          <script type="text/javascript">
-            var divElement = document.getElementById("viz1683250275111");
-            var vizElement = divElement.getElementsByTagName("object")[0];
-            vizElement.style.width = "100%";
-            vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
-            var scriptElement = document.createElement("script");
-            scriptElement.src =
-              "https://public.tableau.com/javascripts/api/viz_v1.js";
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);
-          </script>
-        </div>
-      </div>
-      <br />
-      <p class="emphasis_p">
-        All of these factors are tied with financial instability and housing
-        vulnerability, which is exacerbated by an eviction.
-      </p>
-    </div>
-  </div>
-  <div class="blank"></div>
-
-  <div>
-    <img id="redline" src="..\staticFiles\images\redlining\redline.svg" />
-  </div>
-  <!-- Redlining -->
-  <div class="section_wide" id="redlining">
-    <div class="content_wide">
-      <h1>How did we get here?</h1>
-      <p>
-        These disparate outcomes for Black and White populations did not occur
-        by accident:
-        <span style="color: var(--red)">
-          Much of the racial disparity in housing today is due to the
-          historical legacy of exclusionary policies, redlining, and
-          segregation.</span>
-      </p>
-    </div>
-  </div>
-  <div class="section_wide">
-    <div class="content_wide">
-      <h3>Explicit Racism in Housing</h3>
-      <img src="..\staticFiles\images\redlining\racial_cov.png" />
-    </div>
-    <div class="image_box_sm">
-      <p>
-        Restrictive covenants, like the one to the left, explicitly restricted
-        the sale or rent of properties to non-white residents. While
-        unenforceable, the text can still be found in some leases today.
-      </p>
-    </div>
-  </div>
-  <div class="section_wide">
-    <div class="content_wide">
-      <h3>Implicit Racism in Housing</h3>
-      <img src="..\staticFiles\images\redlining\holc-scan_Oakland_small.jpg" id="redline_map" />
-    </div>
-    <div class="image_box_sm">
-      <p>
-        Redlining excluded racial minorities, especially Black residents, by
-        limiting their ability to obtain loans and own their homes. While not
-        explicitly racist, the outcomes often were. Banks and federal loan
-        providers graded predominantly Black neighborhoods as
-        <span class="red_text">“red”</span>, limiting financial investment.
-        White neighborhoods received
-        <span class="green_text">“green”</span> grades and favorable access to
-        credit, leading to segregation. This process was common throughout the
-        United States, including the Bay Area, pictured in the map below.
-      </p>
-    </div>
-  </div>
-
-  <div class="section_wide">
-    <div class="content_wide">
-      <p class="emphasis_p" id="redline_quote">
-        ...in each city, assigned grades to residential neighborhoods that
-        reflected their "mortgage security" that would then be visualized on
-        color-coded maps. Neighborhoods receiving the highest grade of
-        "A"—colored green on the maps—were deemed minimal risks for banks and
-        other mortgage lenders when they were determining who should received
-        loans and which areas in the city were safe investments. Those
-        receiving the lowest grade of "D," colored red, were considered
-        "hazardous."
+        <!-- Evictions -->
+        <h3>Who faces eviction?</h3>
+        <p>
+          Who is evicted is related to one’s socioeconomic and geographic
+          reality. Eviction is one of the most common methods of displacement,
+          which is when a resident is forced to move against their will.
+          Displacement can have negative effects ranging from worse physical and
+          mental health, more emergency room visits, lower educational outcomes
+          for children, food insecurity, to higher rates of future homelessness.
+        </p>
+        <p>
+          Using data from when tenants are officially removed from their home by
+          the county sheriff from January 2017 to March 2022, the Eviction
+          Research Network finds that there are significant racial disparities
+          in evictions in Richmond. Note that this dataset is a severe
+          undercount of the actual number of evictions occurring, but it is
+          still representative of a larger trend.
+        </p>
         <br />
-      </p>
-      <p class="emphasis_p" id="redline_quote">
-        - University of Richmond’s Mapping Inequality Project
-      </p>
-    </div>
-  </div>
-
-  <!-- Timeline -->
-  <div class="blank"></div>
-  <div class="section_narrow" id="history_roth">
-    <div class="content_narrow" id="history_timepoints">
-      <h2>Let's go back in time</h2>
-      <p>
-        There is a long history of segregation and racist policies that are
-        rooted in the history of Richmond. Starting with World War II, we can
-        see the intersecting influences of wartime economies, corporate
-        interests, migration, and racial bias in the city.
-      </p>
-      <p>
-        The following timeline connects these historical events to the lack of
-        affordable housing in Richmond today.
-      </p>
-    </div>
-    <div class="image_box_med">
-      <div class="tableauPlaceholder" id="viz1683067315620" style="position: relative">
-        <noscript><a href="#"><img alt="Richmond, CA Total Population over Time "
-              src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;po&#47;poplineplottotal&#47;Sheet1&#47;1_rss.png"
-              style="border: none" /></a></noscript><object class="tableauViz" style="display: none">
-          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
-          <param name="embed_code_version" value="3" />
-          <param name="site_root" value="" />
-          <param name="name" value="poplineplottotal&#47;Sheet1" />
-          <param name="tabs" value="no" />
-          <param name="toolbar" value="yes" />
-          <param name="static_image"
-            value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;po&#47;poplineplottotal&#47;Sheet1&#47;1.png" />
-          <param name="animate_transition" value="yes" />
-          <param name="display_static_image" value="yes" />
-          <param name="display_spinner" value="yes" />
-          <param name="display_overlay" value="yes" />
-          <param name="display_count" value="yes" />
-          <param name="language" value="en-US" />
-          <param name="filter" value="publish=yes" />
-        </object>
-      </div>
-      <script type="text/javascript">
-        var divElement = document.getElementById("viz1683067315620");
-        var vizElement = divElement.getElementsByTagName("object")[0];
-        vizElement.style.width = "85%";
-        vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
-        var scriptElement = document.createElement("script");
-        scriptElement.src =
-          "https://public.tableau.com/javascripts/api/viz_v1.js";
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
-      </script>
-    </div>
-  </div>
-
-  <iframe
-    src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1eD-gRHmMaJ6m3V_Se1UKbPZWC2PFQ67UI_mZuNt_vCY&font=Default&lang=en&initial_zoom=2&height=650"
-    width="100%" height="650" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe>
-
-  <div class="blank"></div>
-
-  <!-- Issues in Housing Continue Today -->
-  <div class="center_section" style="height: fit-content">
-    <div class="content_center">
-      <h1>Issues in Housing Continue Today</h1>
-      <p>
-        The systemic injustices of the past have created disparities not
-        easily unraveled. An equitable future requires coordinated effort and
-        investment. In reality, there are many actors in this space whose
-        interests are often directly at odds. Whether intentionally or not,
-        interactions between local government, the general public, and housing
-        developers are why affordable housing continues to be an issue.
-      </p>
-      <h3>Local Government</h3>
-      <p>
-        Local governments have a mandate to plan for and meet housing needs.
-        How plans are implemented is dependent on the priorities, resources,
-        capacity of the city's government, and other actors like developers
-        and voters. A lack of funding for affordable housing is both a
-        national and local complaint. Richmond's county, Contra Costa, for
-        example, has been criticized in particular for not following through
-        on project expectations by disproportionately falling short of
-        developing housing for lower-income households.
-      </p>
-
-      <img src="..\staticFiles\images\issues_today\local_gov.svg" style="width: 100%" />
-
-      <h3>Community</h3>
-      <p>
-        The community plays an important role in how local governments
-        implement plans. Housing bonds fund loans for developers to create
-        affordable housing— all this must be approved by voters. Community
-        engagement on local and neighborhood plans affect the housing goals of
-        the city and county overall. For example, opposition against
-        multifamily development by current residents, commonly referred to as
-        “Not in My Backyard” (NIMBY) opposition, impacts the development
-        timeline of projects by an average of 7.4 months and adds an average
-        5.6% increase in total development costs. Community engagement can
-        also inspire funding to go to projects that support communities
-        aspirations, such as creating affordable housing.
-      </p>
-      <p>
-        It's important for the community to participate in local elections and
-        engage with housing discussions. After all, votes can shape
-        communities.
-      </p>
-
-      <h3>Housing Developers</h3>
-      <p>
-        Multifamily developments must adhere to a variety of regulations in
-        order to protect the health and safety of residents, and ensure the
-        integrity of the building and surrounding area. Adhering to
-        regulations is extremely important to protect the public.
-        Unfortunately, red tape can also delay development and comes at a
-        tangible expense to the project. This creates a lack of incentive and
-        opportunity for developers to build affordable, multifamily housing.
-      </p>
-      <p>
-        Conflicting standards across regulations and overly time consuming
-        review processes are inflating the cost of development, limiting who
-        can afford to contribute to multifamily housing. At present,
-        regulation compliance constitutes an average of 40% of a project's
-        total development cost— a high percentage considering the additional
-        cost of land, labor, and materials.
-      </p>
-      <img style="max-width: 45vw; position: relative; left: 10%"
-        src="..\staticFiles\images\issues_today\dev_cost.svg" />
-      <p>
-        Multifamily development is increasingly being conducted by large corporations who have easy access to
-        funding, rather than smaller, local developers who may want to invest in the community.
-        There needs to be a balance between regulations that protect the public and encourage affordable housing
-        development.
-      </p>
-    </div>
-  </div>
-
-  <!-- What's the fix? -->
-  <div class="center_section" style="height: fit-content; background-color: var(--gray)" id="solutions_menu">
-    <div class="content_center">
-      <h2 style="text-align: center">What's the Fix?</h2>
-      <p>
-        There are no quick fixes to the housing crisis affecting residents in
-        Richmond and beyond. But there are many actors and many approaches
-        working towards housing justice. We’ve summarized these interventions
-        across three themes: Production, Preservation, and Protection. We need
-        movement across all of these areas and more; as we see above, some of
-        these solutions can seem to directly conflict.
-      </p>
-      <div class="tableauPlaceholder" id="viz1683222914345" style="position: relative">
-        <noscript><a href="#"><img
-              alt="A system map of policy interventions and organizations focused on address the housing crisis in Richmond, CA and beyond. Interventions are organized by theme. Click on the nodes to learn more about different solutions. "
-              src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;so&#47;solutions-menu&#47;Sheet1&#47;1_rss.png"
-              style="border: none" /></a></noscript><object class="tableauViz" style="display: none">
-          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
-          <param name="embed_code_version" value="3" />
-          <param name="site_root" value="" />
-          <param name="name" value="solutions-menu&#47;Sheet1" />
-          <param name="tabs" value="no" />
-          <param name="toolbar" value="yes" />
-          <param name="static_image"
-            value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;so&#47;solutions-menu&#47;Sheet1&#47;1.png" />
-          <param name="animate_transition" value="yes" />
-          <param name="display_static_image" value="yes" />
-          <param name="display_spinner" value="yes" />
-          <param name="display_overlay" value="yes" />
-          <param name="display_count" value="yes" />
-          <param name="language" value="en-US" />
-          <param name="filter" value="publish=yes" />
-        </object>
-      </div>
-      <script type="text/javascript">
-        var divElement = document.getElementById("viz1683222914345");
-        var vizElement = divElement.getElementsByTagName("object")[0];
-        vizElement.style.width = "100%";
-        vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
-        var scriptElement = document.createElement("script");
-        scriptElement.src =
-          "https://public.tableau.com/javascripts/api/viz_v1.js";
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
-      </script>
-    </div>
-  </div>
-
-  <!-- Conclusion -->
-  <div class="center_section" id="imagine_future">
-    <div id="conclusion" class="content_center">
-      <h2 style="text-align: center">Let’s imagine a better future.</h2>
-      <div style="display: flex; justify-content: center">
-        <img id="full_house" src="../staticFiles/images/house_hand/full_house.png" />
-      </div>
-      <p>
-        The housing crisis impacts everything—there is no “one size fits all” solution. Thinking of all the work needed
-        to
-        create affordable housing, it can seem impossible to know where to begin.
-      </p>
-      <p>
-        Well, you just took the first step by understanding the history that led to the housing crisis, how it manifests
-        today, and what solutions might look like.
-      </p>
-      <p>
-        Becoming an informed citizen leads to informed action—action that can make a difference. 
-      </p>
-      <p>
-        Thank you for allowing us to educate you on the housing crisis. If you are feeling empowered and ready to do
-        more,
-        we’ve compiled a list of next steps.
-      </p>
-      <h2>TODO: NEXT STEPS?</h2>
-      <p>A future of affordable housing is possible through action— we hope you continue your journey.</p>
-    </div>
-  </div>
-  <!-- bunch of stuff i need to fix but haven't gotten to  -->
-  <div class="center_section" id="imagine_future">
-    <div id="conclusion" class="content_center">
-      <h2 style="text-align: center">This is just the beginning</h2>
-      <div style="display: flex; justify-content: center">
-        <img id="full_house" src="../staticFiles/images/house_hand/full_house.png" />
-      </div>
-      <p>
-        This is a big problem space with no one “one size fits all” solution.
-        When you think of all the work that needs to be done to help fix this
-        problem, it might seem like a maze trying to find where to begin.
-      </p>
-      <p>
-        Well, you just took the first step, empowering action by understanding
-        the history that led to the housing crisis, how it manifests today,
-        and what solutions might look like.
-      </p>
-      <p>
-        Creating informed citizens will lead to informed action, action that
-        can make a difference.
-      </p>
-      <p class="emphasis_p">
-        Let's imagine a better future, here are a few steps to take to make
-        that happen
-      </p>
-      <p>
-        Thank you for allowing us to educate you on the housing crisis. If you
-        are feeling empowered and ready to do more, we’ve compiled a list of
-        things you can do to become active in finding a solution:
-      </p>
-    </div>
-  </div>
-
-  <div class="popup" id="popup">
-    <p>This is a popup!</p>
-    <p>Overlay uses <b>:before</b> and <b>:after</b> pseudo-classes.</p>
-    <p>Website will still remain visible behind this popup.</p>
-    <a href="#popup" onclick="hide('popup')">Close</a>
-  </div>
-
-  <div id="next_steps" class="center_section" style="margin-top: 0">
-    <section>
-      <div class="square sq1">
-        <div id="ns_image_box">
-          <object type="image/svg+xml" data="../staticFiles/images/next_steps/decor.svg" id="decor"></object>
-          <div class="window">
-            <object type="image/svg+xml" data="../staticFiles/images/next_steps/curtain.svg" class="test"></object>
-            <button class="button" href="#" onclick="show('popup')">
-              Button
-            </button>
+        <div class="section_narrow" style="padding: 0; column-gap: 2vw">
+          <div class="content_narrow">
+            <br />
+            <br />
+            <p style="width: 100%; text-align: left">
+              This map shows neighborhoods with the highest levels of recorded
+              evictions:
+              <span style="color: var(--blue); font-weight: bold"
+                >the Iron Triangle</span
+              >,
+              <span style="font-weight: bold">Panhandle, and Hilltop.</span>
+              These neighborhoods are predominantly Black and Hispanic. The
+              current housing landscape places the vulnerable - who are often
+              racial minorities - in precarious situations rather than support
+              them.
+            </p>
           </div>
-          <object type="image/svg+xml" data="..\staticFiles\images\next_steps\foreground.svg" id="foreground"></object>
 
-          <img src="..\staticFiles\images\next_steps\background.svg" id="background" />
+          <div class="image_box_med">
+            <div
+              class="tableauPlaceholder"
+              id="viz1683249159917"
+              style="position: relative"
+            >
+              <noscript
+                ><a href="#"
+                  ><img
+                    alt="Majority Race by Tract (2021) versus Evictions  (Jan 2017- Mar 2022) "
+                    src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ev&#47;Eviction_Map_Update&#47;Sheet1&#47;1_rss.png"
+                    style="border: none" /></a></noscript
+              ><object class="tableauViz" style="display: none">
+                <param
+                  name="host_url"
+                  value="https%3A%2F%2Fpublic.tableau.com%2F"
+                />
+                <param name="embed_code_version" value="3" />
+                <param
+                  name="path"
+                  value="views&#47;Eviction_Map_Update&#47;Sheet1?:language=en-US&amp;:embed=true&amp;publish=yes"
+                />
+                <param name="toolbar" value="yes" />
+                <param
+                  name="static_image"
+                  value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ev&#47;Eviction_Map_Update&#47;Sheet1&#47;1.png"
+                />
+                <param name="animate_transition" value="yes" />
+                <param name="display_static_image" value="yes" />
+                <param name="display_spinner" value="yes" />
+                <param name="display_overlay" value="yes" />
+                <param name="display_count" value="yes" />
+                <param name="language" value="en-US" />
+                <param name="filter" value="publish=yes" />
+              </object>
+            </div>
+            <script type="text/javascript">
+              var divElement = document.getElementById("viz1683249159917");
+              var vizElement = divElement.getElementsByTagName("object")[0];
+              vizElement.style.width = "100%";
+              vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
+              var scriptElement = document.createElement("script");
+              scriptElement.src =
+                "https://public.tableau.com/javascripts/api/viz_v1.js";
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+          </div>
         </div>
+        <br />
+        <h2>
+          Federal, state, and local governments tried to reduce the impact of
+          evictions during the COVID-19 pandemic by passing an eviction
+          moratorium. However...
+        </h2>
+        <p>
+          While moratoria reduced evictions overall during the COVID-19 pandemic
+          in 2020, Black and Hispanic residents are still evicted at higher
+          rates compared to White and Asian residents. In 2017, there were 3.5
+          Black and 2.5 Hispanic evictions for every 1 White eviction. In 2021,
+          there were 3.5 Black evictions and 4 Hispanic eviction for every White
+          eviction.
+        </p>
+
+        <div class="section_narrow" style="padding: 0; column-gap: 2vw">
+          <div class="content_narrow">
+            <img
+              src="..\staticFiles\images\eviction_map\eviction rate iso.svg"
+              style="width: 98%"
+            />
+          </div>
+          <div class="image_box_med" style="text-align: left">
+            <div
+              class="tableauPlaceholder"
+              id="viz1683250275111"
+              style="position: relative"
+            >
+              <noscript
+                ><a href="#"
+                  ><img
+                    alt="Yearly evictions in Richmond, CA by race (Jan. 2017 - Mar. 2022) "
+                    src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ev&#47;evictionovertime&#47;Sheet2&#47;1_rss.png"
+                    style="border: none" /></a></noscript
+              ><object class="tableauViz" style="display: none">
+                <param
+                  name="host_url"
+                  value="https%3A%2F%2Fpublic.tableau.com%2F"
+                />
+                <param name="embed_code_version" value="3" />
+                <param name="site_root" value="" />
+                <param name="name" value="evictionovertime&#47;Sheet2" />
+                <param name="tabs" value="no" />
+                <param name="toolbar" value="yes" />
+                <param
+                  name="static_image"
+                  value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ev&#47;evictionovertime&#47;Sheet2&#47;1.png"
+                />
+                <param name="animate_transition" value="yes" />
+                <param name="display_static_image" value="yes" />
+                <param name="display_spinner" value="yes" />
+                <param name="display_overlay" value="yes" />
+                <param name="display_count" value="yes" />
+                <param name="language" value="en-US" />
+                <param name="filter" value="publish=yes" />
+              </object>
+            </div>
+            <script type="text/javascript">
+              var divElement = document.getElementById("viz1683250275111");
+              var vizElement = divElement.getElementsByTagName("object")[0];
+              vizElement.style.width = "100%";
+              vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
+              var scriptElement = document.createElement("script");
+              scriptElement.src =
+                "https://public.tableau.com/javascripts/api/viz_v1.js";
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+          </div>
+        </div>
+        <br />
+        <p class="emphasis_p">
+          All of these factors are tied with financial instability and housing
+          vulnerability, which is exacerbated by an eviction.
+        </p>
       </div>
-    </section>
-  </div>
+    </div>
+    <div class="blank"></div>
 
-  <div class="section_wide">
-    <footer>
-      <ol>
-        <li id="footnotes">
-          <a href="https://belonging.berkeley.edu/single-family-zoning-san-francisco-bay-area#footnote2_bdmrqlk"
-            target="_blank">Othering and Belonging Institute</a>
-          <a href="#footnotes-ref" aria-label="Back to content">↩</a>
-        </li>
-        <li id="everything">
-          <a href="https://worksinprogress.co/issue/the-housing-theory-of-everything" target="_blank">Works in
-            Progress</a>
-          <a href="#everything-ref" aria-label="Back to content">↩</a>
-        </li>
-      </ol>
-    </footer>
-  </div>
+    <div>
+      <img id="redline" src="..\staticFiles\images\redlining\redline.svg" />
+    </div>
+    <!-- Redlining -->
+    <div class="section_wide" id="redlining">
+      <div class="content_wide">
+        <h1>How did we get here?</h1>
+        <p>
+          These disparate outcomes for Black and White populations did not occur
+          by accident:
+          <span style="color: var(--red)">
+            Much of the racial disparity in housing today is due to the
+            historical legacy of exclusionary policies, redlining, and
+            segregation.</span
+          >
+        </p>
+      </div>
+    </div>
+    <div class="section_wide">
+      <div class="content_wide">
+        <h3>Explicit Racism in Housing</h3>
+        <img src="..\staticFiles\images\redlining\racial_cov.png" />
+      </div>
+      <div class="image_box_sm">
+        <p>
+          Restrictive covenants, like the one to the left, explicitly restricted
+          the sale or rent of properties to non-white residents. While
+          unenforceable, the text can still be found in some leases today.
+        </p>
+      </div>
+    </div>
+    <div class="section_wide">
+      <div class="content_wide">
+        <h3>Implicit Racism in Housing</h3>
+        <img
+          src="..\staticFiles\images\redlining\holc-scan_Oakland_small.jpg"
+          id="redline_map"
+        />
+      </div>
+      <div class="image_box_sm">
+        <p>
+          Redlining excluded racial minorities, especially Black residents, by
+          limiting their ability to obtain loans and own their homes. While not
+          explicitly racist, the outcomes often were. Banks and federal loan
+          providers graded predominantly Black neighborhoods as
+          <span class="red_text">“red”</span>, limiting financial investment.
+          White neighborhoods received
+          <span class="green_text">“green”</span> grades and favorable access to
+          credit, leading to segregation. This process was common throughout the
+          United States, including the Bay Area, pictured in the map below.
+        </p>
+      </div>
+    </div>
 
-  <script src="../staticFiles/js/script.js"></script>
-</body>
+    <div class="section_wide">
+      <div class="content_wide">
+        <p class="emphasis_p" id="redline_quote">
+          ...in each city, assigned grades to residential neighborhoods that
+          reflected their "mortgage security" that would then be visualized on
+          color-coded maps. Neighborhoods receiving the highest grade of
+          "A"—colored green on the maps—were deemed minimal risks for banks and
+          other mortgage lenders when they were determining who should received
+          loans and which areas in the city were safe investments. Those
+          receiving the lowest grade of "D," colored red, were considered
+          "hazardous."
+          <br />
+        </p>
+        <p class="emphasis_p" id="redline_quote">
+          - University of Richmond’s Mapping Inequality Project
+        </p>
+      </div>
+    </div>
 
+    <!-- Timeline -->
+    <div class="blank"></div>
+    <div class="section_narrow" id="history_roth">
+      <div class="content_narrow" id="history_timepoints">
+        <h2>Let's go back in time</h2>
+        <p>
+          There is a long history of segregation and racist policies that are
+          rooted in the history of Richmond. Starting with World War II, we can
+          see the intersecting influences of wartime economies, corporate
+          interests, migration, and racial bias in the city.
+        </p>
+        <p>
+          The following timeline connects these historical events to the lack of
+          affordable housing in Richmond today.
+        </p>
+      </div>
+      <div class="image_box_med">
+        <div
+          class="tableauPlaceholder"
+          id="viz1683067315620"
+          style="position: relative"
+        >
+          <noscript
+            ><a href="#"
+              ><img
+                alt="Richmond, CA Total Population over Time "
+                src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;po&#47;poplineplottotal&#47;Sheet1&#47;1_rss.png"
+                style="border: none" /></a></noscript
+          ><object class="tableauViz" style="display: none">
+            <param
+              name="host_url"
+              value="https%3A%2F%2Fpublic.tableau.com%2F"
+            />
+            <param name="embed_code_version" value="3" />
+            <param name="site_root" value="" />
+            <param name="name" value="poplineplottotal&#47;Sheet1" />
+            <param name="tabs" value="no" />
+            <param name="toolbar" value="yes" />
+            <param
+              name="static_image"
+              value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;po&#47;poplineplottotal&#47;Sheet1&#47;1.png"
+            />
+            <param name="animate_transition" value="yes" />
+            <param name="display_static_image" value="yes" />
+            <param name="display_spinner" value="yes" />
+            <param name="display_overlay" value="yes" />
+            <param name="display_count" value="yes" />
+            <param name="language" value="en-US" />
+            <param name="filter" value="publish=yes" />
+          </object>
+        </div>
+        <script type="text/javascript">
+          var divElement = document.getElementById("viz1683067315620");
+          var vizElement = divElement.getElementsByTagName("object")[0];
+          vizElement.style.width = "85%";
+          vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
+          var scriptElement = document.createElement("script");
+          scriptElement.src =
+            "https://public.tableau.com/javascripts/api/viz_v1.js";
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </div>
+    </div>
+
+    <iframe
+      src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1eD-gRHmMaJ6m3V_Se1UKbPZWC2PFQ67UI_mZuNt_vCY&font=Default&lang=en&initial_zoom=2&height=650"
+      width="100%"
+      height="650"
+      webkitallowfullscreen
+      mozallowfullscreen
+      allowfullscreen
+      frameborder="0"
+    ></iframe>
+
+    <div class="blank"></div>
+
+    <!-- Issues in Housing Continue Today -->
+    <div class="center_section" style="height: fit-content">
+      <div class="content_center">
+        <h1>Issues in Housing Continue Today</h1>
+        <p>
+          The systemic injustices of the past have created disparities not
+          easily unraveled. An equitable future requires coordinated effort and
+          investment. In reality, there are many actors in this space whose
+          interests are often directly at odds. Whether intentionally or not,
+          interactions between local government, the general public, and housing
+          developers are why affordable housing continues to be an issue.
+        </p>
+        <h3>Local Government</h3>
+        <p>
+          Local governments have a mandate to plan for and meet housing needs.
+          How plans are implemented is dependent on the priorities, resources,
+          capacity of the city's government, and other actors like developers
+          and voters. A lack of funding for affordable housing is both a
+          national and local complaint. Richmond's county, Contra Costa, for
+          example, has been criticized in particular for not following through
+          on project expectations by disproportionately falling short of
+          developing housing for lower-income households.
+        </p>
+
+        <img
+          src="..\staticFiles\images\issues_today\local_gov.svg"
+          style="width: 100%"
+        />
+        <p>
+          The trend that Contra Costa county (where Richmond is) exhibits here
+          of disproportionally under-developing housing planned for very low and
+          low income households mirrors the rest of the Bay Area. The
+          Association of Bay Area Governments (ABAG), sets goals for housing
+          developments based on population growth and housing needs. Between
+          2007 and 2014, the Great Recession affected the ability to finance
+          affordable housing, and was further impacted by an overall decrease in
+          funding from state and federal sources.
+        </p>
+
+        <h3>Community</h3>
+        <p>
+          The community plays an important role in how local governments
+          implement plans. Housing bonds fund loans for developers to create
+          affordable housing— all this must be approved by voters. Community
+          engagement on local and neighborhood plans affect the housing goals of
+          the city and county overall. For example, opposition against
+          multifamily development by current residents, commonly referred to as
+          “Not in My Backyard” (NIMBY) opposition, impacts the development
+          timeline of projects by an average of 7.4 months and adds an average
+          5.6% increase in total development costs. Community engagement can
+          also inspire funding to go to projects that support communities
+          aspirations, such as creating affordable housing.
+        </p>
+        <p>
+          It's important for the community to participate in local elections and
+          engage with housing discussions. After all, votes can shape
+          communities.
+        </p>
+
+        <h3>Housing Developers</h3>
+        <p>
+          Multifamily developments must adhere to a variety of regulations in
+          order to protect the health and safety of residents, and ensure the
+          integrity of the building and surrounding area. Adhering to
+          regulations is extremely important to protect the public.
+          Unfortunately, red tape can also delay development and comes at a
+          tangible expense to the project. This creates a lack of incentive and
+          opportunity for developers to build affordable, multifamily housing.
+        </p>
+        <p>
+          Conflicting standards across regulations and overly time consuming
+          review processes are inflating the cost of development, limiting who
+          can afford to contribute to multifamily housing. At present,
+          regulation compliance constitutes an average of 40% of a project's
+          total development cost— a high percentage considering the additional
+          cost of land, labor, and materials.
+        </p>
+        <img
+          style="max-width: 45vw; position: relative; left: 10%"
+          src="..\staticFiles\images\issues_today\dev_cost.svg"
+        />
+        <p>
+          Multifamily development is increasingly being conducted by large
+          corporations who have easy access to funding, rather than smaller,
+          local developers who may want to invest in the community. There needs
+          to be a balance between regulations that protect the public and
+          encourage affordable housing development.
+        </p>
+      </div>
+    </div>
+
+    <!-- What's the fix? -->
+    <div
+      class="center_section"
+      style="height: fit-content; background-color: var(--gray)"
+      id="solutions_menu"
+    >
+      <div class="content_center">
+        <h2 style="text-align: center">What's the Fix?</h2>
+        <p>
+          There are no quick fixes to the housing crisis affecting residents in
+          Richmond and beyond. But there are many actors and many approaches
+          working towards housing justice. We’ve summarized these interventions
+          across three themes: Production, Preservation, and Protection. We need
+          movement across all of these areas and more; as we see above, some of
+          these solutions can seem to directly conflict.
+        </p>
+        <div
+          class="tableauPlaceholder"
+          id="viz1683222914345"
+          style="position: relative"
+        >
+          <noscript
+            ><a href="#"
+              ><img
+                alt="A system map of policy interventions and organizations focused on address the housing crisis in Richmond, CA and beyond. Interventions are organized by theme. Click on the nodes to learn more about different solutions. "
+                src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;so&#47;solutions-menu&#47;Sheet1&#47;1_rss.png"
+                style="border: none" /></a></noscript
+          ><object class="tableauViz" style="display: none">
+            <param
+              name="host_url"
+              value="https%3A%2F%2Fpublic.tableau.com%2F"
+            />
+            <param name="embed_code_version" value="3" />
+            <param name="site_root" value="" />
+            <param name="name" value="solutions-menu&#47;Sheet1" />
+            <param name="tabs" value="no" />
+            <param name="toolbar" value="yes" />
+            <param
+              name="static_image"
+              value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;so&#47;solutions-menu&#47;Sheet1&#47;1.png"
+            />
+            <param name="animate_transition" value="yes" />
+            <param name="display_static_image" value="yes" />
+            <param name="display_spinner" value="yes" />
+            <param name="display_overlay" value="yes" />
+            <param name="display_count" value="yes" />
+            <param name="language" value="en-US" />
+            <param name="filter" value="publish=yes" />
+          </object>
+        </div>
+        <script type="text/javascript">
+          var divElement = document.getElementById("viz1683222914345");
+          var vizElement = divElement.getElementsByTagName("object")[0];
+          vizElement.style.width = "100%";
+          vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
+          var scriptElement = document.createElement("script");
+          scriptElement.src =
+            "https://public.tableau.com/javascripts/api/viz_v1.js";
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </div>
+    </div>
+
+    <!-- Conclusion -->
+    <div class="center_section" id="imagine_future">
+      <div id="conclusion" class="content_center">
+        <h2 style="text-align: center">Let’s imagine a better future.</h2>
+        <div style="display: flex; justify-content: center">
+          <img
+            id="full_house"
+            src="../staticFiles/images/house_hand/full_house.png"
+          />
+        </div>
+        <p>
+          The housing crisis impacts everything—there is no “one size fits all”
+          solution. Thinking of all the work needed to create affordable
+          housing, it can seem impossible to know where to begin.
+        </p>
+        <p>
+          Well, you just took the first step by understanding the history that
+          led to the housing crisis, how it manifests today, and what solutions
+          might look like.
+        </p>
+        <p>
+          Becoming an informed citizen leads to informed action—action that can
+          make a difference. 
+        </p>
+        <p>
+          Thank you for allowing us to educate you on the housing crisis. If you
+          are feeling empowered and ready to do more, we’ve compiled a list of
+          next steps.
+        </p>
+        <h2>TODO: NEXT STEPS?</h2>
+        <p>
+          A future of affordable housing is possible through action— we hope you
+          continue your journey.
+        </p>
+      </div>
+    </div>
+    <!-- bunch of stuff i need to fix but haven't gotten to  -->
+    <div class="center_section" id="imagine_future">
+      <div id="conclusion" class="content_center">
+        <h2 style="text-align: center">This is just the beginning</h2>
+        <div style="display: flex; justify-content: center">
+          <img
+            id="full_house"
+            src="../staticFiles/images/house_hand/full_house.png"
+          />
+        </div>
+        <p>
+          This is a big problem space with no one “one size fits all” solution.
+          When you think of all the work that needs to be done to help fix this
+          problem, it might seem like a maze trying to find where to begin.
+        </p>
+        <p>
+          Well, you just took the first step, empowering action by understanding
+          the history that led to the housing crisis, how it manifests today,
+          and what solutions might look like.
+        </p>
+        <p>
+          Creating informed citizens will lead to informed action, action that
+          can make a difference.
+        </p>
+        <p class="emphasis_p">
+          Let's imagine a better future, here are a few steps to take to make
+          that happen
+        </p>
+        <p>
+          Thank you for allowing us to educate you on the housing crisis. If you
+          are feeling empowered and ready to do more, we’ve compiled a list of
+          things you can do to become active in finding a solution:
+        </p>
+      </div>
+    </div>
+
+    <div class="popup" id="popup">
+      <p>This is a popup!</p>
+      <p>Overlay uses <b>:before</b> and <b>:after</b> pseudo-classes.</p>
+      <p>Website will still remain visible behind this popup.</p>
+      <a href="#popup" onclick="hide('popup')">Close</a>
+    </div>
+
+    <div id="next_steps" class="center_section" style="margin-top: 0">
+      <section>
+        <div class="square sq1">
+          <div id="ns_image_box">
+            <object
+              type="image/svg+xml"
+              data="../staticFiles/images/next_steps/decor.svg"
+              id="decor"
+            ></object>
+            <div class="window">
+              <object
+                type="image/svg+xml"
+                data="../staticFiles/images/next_steps/curtain.svg"
+                class="test"
+              ></object>
+              <button class="button" href="#" onclick="show('popup')">
+                Button
+              </button>
+            </div>
+            <object
+              type="image/svg+xml"
+              data="..\staticFiles\images\next_steps\foreground.svg"
+              id="foreground"
+            ></object>
+
+            <img
+              src="..\staticFiles\images\next_steps\background.svg"
+              id="background"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="section_wide">
+      <footer>
+        <ol>
+          <li id="footnotes">
+            <a
+              href="https://belonging.berkeley.edu/single-family-zoning-san-francisco-bay-area#footnote2_bdmrqlk"
+              target="_blank"
+              >Othering and Belonging Institute</a
+            >
+            <a href="#footnotes-ref" aria-label="Back to content">↩</a>
+          </li>
+          <li id="everything">
+            <a
+              href="https://worksinprogress.co/issue/the-housing-theory-of-everything"
+              target="_blank"
+              >Works in Progress</a
+            >
+            <a href="#everything-ref" aria-label="Back to content">↩</a>
+          </li>
+        </ol>
+      </footer>
+    </div>
+
+    <script src="../staticFiles/js/script.js"></script>
+  </body>
 </html>
