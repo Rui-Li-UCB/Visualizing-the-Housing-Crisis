@@ -93,8 +93,8 @@ p {
 }
 .image_box_med{
   grid-column:2/3;
-  height:fit-content;
-  width:fit-content;
+  height:100%;
+  width:100%;
 }
 .image_box_med p{
   width:80%;
@@ -103,7 +103,7 @@ p {
 .center_section{
   text-align: center;
   padding: 50px;
-  min-height: 60vh;
+  min-height: fit-content;
   margin-top: 80px;
   display: flex;
   justify-content: center;
@@ -114,6 +114,9 @@ p {
 }
 .center_section p{
   text-align: center;
+}
+.content_center h1, .content_center h2, .content_center h3{
+  text-align:center;
 }
 
 /* nav bar */
